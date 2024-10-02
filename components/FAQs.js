@@ -38,7 +38,9 @@ const FAQs = () => {
 
   return (
     <div className="container px-4 py-10 mx-auto lg:w-[1200px]">
-      <h2 className="text-3xl font-bold mb-6 text-center">Got Questions?</h2>
+      <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center text-gray-800 dark:text-gray-200">
+        Got Questions?
+      </h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-200 pb-4">

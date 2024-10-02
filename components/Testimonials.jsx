@@ -66,7 +66,7 @@ const Testimonials = () => {
                 transition: "transform 0.5s ease",
               }}
             >
-              <div className="flex flex-col items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div className="flex flex-col items-center p-6 bg-white border rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}

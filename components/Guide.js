@@ -1,24 +1,28 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import steps_img from "../app/assets/steps_illustration.svg";
-import { Button } from "./ui/button";
+import RingBtn from "./RingBtn";
 const Guide = () => {
   return (
-    <section className="container px-4 py-10 mx-auto dark:bg-gray-900 dark:text-white rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold mb-8 text-center">
+    <section
+      className="container px-4 py-10 mx-auto dark:bg-gray-900 dark:text-white rounded-lg shadow-lg"
+      id="guide"
+    >
+      <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200">
         Your Path to Germany in 4 Simple Steps
       </h2>
       <div className="flex flex-col lg:flex-row lg:space-x-8">
         <div className="lg:w-1/2 space-y-6">
-          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">
-              Step 1: Schedule a Consultation
+              Step 1: Schedule Free Consultation
             </h3>
             <p>
               Book a session with our experts to discuss your goals and plans.
             </p>
           </div>
-          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">
               Step 2: Personalized Resume & Application Support
             </h3>
@@ -27,7 +31,7 @@ const Guide = () => {
               application.
             </p>
           </div>
-          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">
               Step 3: Submission & Follow-up
             </h3>
@@ -36,7 +40,7 @@ const Guide = () => {
               the process.
             </p>
           </div>
-          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">
               Step 4: Get Ready for Your New Life in Germany
             </h3>
@@ -57,12 +61,7 @@ const Guide = () => {
         </div>
       </div>
       <div className="mt-8 text-center">
-        <Button
-          className="dark:bg-white bg-black text-white dark:text-black"
-          variant="lg"
-        >
-          Start Now
-        </Button>
+        <RingBtn />
       </div>
     </section>
   );

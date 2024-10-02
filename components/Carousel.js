@@ -76,7 +76,7 @@ const studentTestimonials = [
 const CarouselSection = () => {
   return (
     <section className="container px-4 py-10 mx-auto">
-      <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white text-center">
+      <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-800 dark:text-white text-center">
         Success Stories
       </h2>
       <Carousel

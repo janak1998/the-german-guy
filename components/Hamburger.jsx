@@ -3,7 +3,7 @@ import React from "react";
 const Hamburger = () => {
   return (
     <svg
-      className="cursor-pointer"
+      className="cursor-pointer dark:stroke-white dark:fill-white"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 10 10"
       width="40"

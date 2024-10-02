@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section className="container px-4 py-10 mx-auto">
       <div className="text-center">
-        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200">
+        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 ">
           How We Help You
         </h2>
         <p className="text-center mt-2 text-lg text-gray-500 dark:text-gray-300">
