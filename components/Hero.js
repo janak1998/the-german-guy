@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl font-bold">
           You Decide, We Support
         </h1>
-        <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 mb-9 max-w-[600px]">
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 mb-9 max-w-[650px]">
           Starting your journey to Germany can feel daunting. At{" "}
           <b>The German Guy </b>, we're here to make it easier for both students
           and professionals. From crafting resumes to navigating university and
