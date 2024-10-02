@@ -57,7 +57,12 @@ const Guide = () => {
         </div>
       </div>
       <div className="mt-8 text-center">
-        <Button variant="lg">Start Now</Button>
+        <Button
+          className="dark:bg-white bg-black text-white dark:text-black"
+          variant="lg"
+        >
+          Start Now
+        </Button>
       </div>
     </section>
   );
