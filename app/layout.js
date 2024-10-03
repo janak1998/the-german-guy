@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar.jsx";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
               Janak Bohra
             </Link>
           </div>
+          <ScrollToTopButton />
         </ThemeProvider>
       </body>
     </html>

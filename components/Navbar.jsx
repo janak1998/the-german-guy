@@ -113,10 +113,7 @@ const Navbar = () => {
                           </Link>
                         </li>
                       </ul>
-                      <Button href="/#contact-us" className="w-[50%]">
-                        {" "}
-                        CONTACT US{" "}
-                      </Button>
+                      <Button className="w-[50%]"> CONTACT US </Button>
                     </div>
                   </SheetDescription>
                 </SheetHeader>

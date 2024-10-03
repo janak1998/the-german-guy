@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Promotion = () => {
   return (
-    <section className="container px-4 py-10 mx-auto rounded-lg shadow-md py-8 bg-gray-100 dark:bg-gray-800 mb-10 flex flex-col items-center">
+    <section className="container px-4 py-10 mx-auto rounded-lg shadow-md py-8 bg-gray-100 dark:bg-gray-900 mb-10 flex flex-col items-center">
       <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-800 dark:text-gray-100 text-center">
         Latest Announcements & Offers
       </h2>
@@ -11,7 +11,7 @@ const Promotion = () => {
         Stay updated with the latest promotions and important announcements.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-[1400px] mx-auto">
-        <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md flex items-center justify-center">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center justify-center">
           <div className="mr-4">
             <i className="fas fa-bullhorn text-2xl text-gray-900 dark:text-gray-100"></i>
           </div>
@@ -26,7 +26,7 @@ const Promotion = () => {
             <Button className="max-w-[200px]">Learn More</Button>
           </div>
         </div>
-        <div className="bg-gray-800 dark:bg-gray-700 p-6 rounded-lg shadow-md flex items-center justify-center">
+        <div className="bg-gray-800 dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center justify-center">
           <div className="mr-4">
             <i className="fas fa-tag text-2xl text-gray-300 dark:text-gray-100"></i>
           </div>
@@ -44,7 +44,7 @@ const Promotion = () => {
             </Button>
           </div>
         </div>
-        <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md flex items-center justify-center">
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center justify-center">
           <div className="mr-4">
             <i className="fas fa-calendar-alt text-2xl text-gray-900 dark:text-gray-100"></i>
           </div>
@@ -58,7 +58,7 @@ const Promotion = () => {
             <Button className="max-w-[200px]">Learn More</Button>
           </div>
         </div>
-        <div className="bg-gray-800 dark:bg-gray-700 p-6 rounded-lg shadow-md flex items-center justify-center">
+        <div className="bg-gray-800 dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center justify-center">
           <div className="mr-4">
             <i className="fas fa-tag text-2xl text-gray-300 dark:text-gray-100"></i>
           </div>

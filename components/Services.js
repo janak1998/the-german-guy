@@ -13,7 +13,7 @@ const Services = () => {
         </p>
       </div>
       <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transform hover:scale-105 transition-transform duration-300 h-full">
+        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transform hover:scale-105 transition-transform duration-300 h-full">
           <div className="flex flex-col items-center">
             <svg
               className="w-12 h-12 text-primary mb-4"
@@ -38,9 +38,9 @@ const Services = () => {
             </p>
           </div>
 
-          <Button>More Info</Button>
+          <Button className="mt-2">More Info</Button>
         </div>
-        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transform hover:scale-105 transition-transform duration-300 h-full">
+        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transform hover:scale-105 transition-transform duration-300 h-full">
           <div className="flex flex-col items-center">
             <svg
               className="w-12 h-12 text-primary mb-4"
@@ -63,9 +63,9 @@ const Services = () => {
               Join our language classes to improve your communication skills.
             </p>
           </div>
-          <Button>More Info</Button>
+          <Button className="mt-2">More Info</Button>
         </div>
-        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transform hover:scale-105 transition-transform duration-300 h-full">
+        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transform hover:scale-105 transition-transform duration-300 h-full">
           <div className="flex flex-col items-center">
             <svg
               className="w-12 h-12 text-primary mb-4"
@@ -88,9 +88,9 @@ const Services = () => {
               Get assistance with setting up your new life after arrival.
             </p>
           </div>
-          <Button>More Info</Button>
+          <Button className="mt-2">More Info</Button>
         </div>
-        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transform hover:scale-105 transition-transform duration-300 h-full">
+        <div className="flex flex-col justify-between items-center p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transform hover:scale-105 transition-transform duration-300 h-full">
           <div className="flex flex-col items-center">
             <svg
               className="w-12 h-12 text-primary mb-4"
@@ -113,7 +113,7 @@ const Services = () => {
               Support in landing the perfect job to kickstart your career.
             </p>
           </div>
-          <Button>More Info</Button>
+          <Button className="mt-2">More Info</Button>
         </div>
       </div>
     </section>

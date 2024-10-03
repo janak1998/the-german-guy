@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import steps_img from "../app/assets/steps_illustration.svg";
 import RingBtn from "./RingBtn";
 const Guide = () => {
   return (
@@ -52,7 +51,7 @@ const Guide = () => {
         </div>
         <div className="lg:w-1/2 flex items-center justify-center mt-8 lg:mt-0">
           <Image
-            src={steps_img}
+            src="/assets/steps_illustration.svg"
             alt="A beautiful landscape"
             width={800}
             height={500}

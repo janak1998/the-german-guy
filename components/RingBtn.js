@@ -1,16 +1,18 @@
+import Link from "next/link";
 import React from "react";
 
-const RingBtn = () => {
+const RingBtn = ({ btnText = "Let's Talk" }) => {
   return (
     <>
-      <button
+      <Link
         href="https://calendly.com/thegermanguys"
         target="_blank"
-        id="contact-us"
-        className="relative inline-flex items-center justify-center px-6 py-3 text-white bg-[#6C63FF] hover:bg-[#5A52D1] rounded-lg focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all duration-300 ease-in-out animate-ring"
+        rel="noopener noreferrer"
       >
-        Let's Talk
-      </button>
+        <button className="relative inline-flex items-center justify-center px-6 py-3 text-white bg-[#6C63FF] hover:bg-[#5A52D1] rounded-lg focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all duration-300 ease-in-out animate-ring">
+          {btnText}
+        </button>
+      </Link>
 
       <style jsx>{`
         @keyframes ring {

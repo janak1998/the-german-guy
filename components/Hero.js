@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import heroSvg from "../app/assets/hero_illustration.svg";
 import Link from "next/link";
 
 const Hero = () => {
@@ -53,10 +52,13 @@ const Hero = () => {
       </div>
       <div className="w-3/4 mt-4 lg:mt-0 lg:w-[500px]">
         <Image
-          src={heroSvg}
+          src="/assets/hero_illustration.svg"
           alt="The Hero Image"
+          width={400}
+          height={400}
           priority={true}
           placeholder="empty"
+          className="mx-auto "
         />
       </div>
     </section>

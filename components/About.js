@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import teamSvg from "../app/assets/team_illustration.svg";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +13,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="flex justify-center text-center">
           <Image
-            src={teamSvg}
+            src="/assets/team_illustration.svg"
             alt="The German Guy Team"
             width={800}
             height={500}
