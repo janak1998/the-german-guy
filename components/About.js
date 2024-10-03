@@ -18,7 +18,6 @@ const About = () => {
             alt="The German Guy Team"
             width={800}
             height={500}
-            style="responsive"
           />
         </div>
         <div className="text-center lg:text-left">

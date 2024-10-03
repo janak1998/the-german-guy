@@ -56,7 +56,6 @@ const Guide = () => {
             alt="A beautiful landscape"
             width={800}
             height={500}
-            style="responsive"
           />
         </div>
       </div>
