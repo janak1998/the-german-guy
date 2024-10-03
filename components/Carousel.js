@@ -89,21 +89,21 @@ const CarouselSection = () => {
           {studentTestimonials.map((person, index) => (
             <CarouselItem
               key={index}
-              className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4 "
+              className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4"
             >
               <div className="p-1">
-                <Card>
-                  <CardHeader className="">
+                <Card className="flex flex-col min-h-[400px] justify-between">
+                  <CardHeader className="flex justify-center items-center">
                     <Image
                       src={person.image}
                       alt={person.name}
-                      className="rounded-full mx-auto"
+                      className="rounded-full"
                       height={150}
                       width={150}
                     />
                   </CardHeader>
                   <CardTitle className="text-center">{person.name}</CardTitle>
-                  <CardContent className="flex items-center justify-center p-6">
+                  <CardContent className="flex-grow flex items-center justify-center p-6">
                     <span className="text-md font-semibold">
                       {person.description}
                     </span>
