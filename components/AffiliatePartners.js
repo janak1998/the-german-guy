@@ -37,7 +37,7 @@ const affiliateLinks = {
 };
 
 const AffiliatePartners = () => (
-  <ul className="mt-4">
+  <ul className="mt-2">
     {Object.entries(affiliateLinks).map(([key, { name, url }]) => (
       <li key={key} className="py-2">
         {`For ${key
