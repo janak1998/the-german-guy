@@ -15,7 +15,7 @@ const ScrollToTopButton = () => {
       className="fixed bottom-6 right-6 p-4 bg-blue-500 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all duration-300"
     >
       <svg
-        className="stroke-white fill-white dark:stroke-black dark:fill-black"
+        className="stroke-white fill-white "
         xmlns="http://www.w3.org/2000/svg"
         width="30"
         height="30"
