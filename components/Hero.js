@@ -40,18 +40,15 @@ const Hero = () => {
               </svg>
             </Link>
           </Button>
-          <Button
-            size="elg"
-            className="text-xl max-w-[500px] relative font-medium w-full "
+          <Link
+            href="https://calendly.com/thegermanguys"
+            target="_blank"
+            className="block lg:flex w-full lg:w-fit max-w-[500px] min-w-[288px]"
           >
-            <Link
-              href="https://calendly.com/thegermanguys"
-              target="_blank"
-              className="flex"
-            >
+            <Button size="elg" className="text-xl font-medium w-full">
               Get a Free Session
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="w-3/4 mt-4 lg:mt-0 lg:w-[500px]">
