@@ -57,7 +57,7 @@ const Navbar = () => {
               </li>
             </ul>
             <Link
-              href="/#contact-us"
+              href="/#talk-to-team"
               className="hidden font-bold md:block mr-4 bg-primary text-secondary
               px-3 py-2 rounded-lg
               "

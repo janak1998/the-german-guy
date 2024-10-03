@@ -48,7 +48,9 @@ const About = () => {
             in Germany, offering tailored solutions and connecting you with
             valuable resources. Join us and turn your aspirations into reality.
           </p>
-          <Button className="mr-6">Know More</Button>
+          <Button className="mr-6" id="talk-to-team">
+            Know More
+          </Button>
           <RingBtn />
         </div>
       </div>
