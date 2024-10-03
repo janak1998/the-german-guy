@@ -81,3 +81,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.container {
+  @apply w-[90%];
+
+  @screen lg {
+    width: 80%;
+  }
+}

@@ -37,7 +37,7 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="container px-4 py-10 mx-auto lg:w-[1200px]">
+    <div className="container px-4 py-10 mx-auto lg:max-w-[1200px]">
       <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center text-gray-800 dark:text-gray-200">
         Got Questions?
       </h2>
