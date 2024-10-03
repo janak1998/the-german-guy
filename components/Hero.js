@@ -21,7 +21,7 @@ const Hero = () => {
           job applications, our dedicated team supports you every step of the
           way, ensuring a smooth and successful transition.
         </p>
-        <div className="btn_wrapper flex flex-wrap gap-10 ">
+        <div className="btn_wrapper flex flex-wrap gap-10 justify-center">
           <Button
             size="elg"
             className="text-xl max-w-[500px]  font-semibold w-full lg:w-fit"
