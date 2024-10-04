@@ -41,10 +41,10 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/visa-types"
+                  href="/partners"
                   className="block py-2 md:py-0 hover:text-blue-500"
                 >
-                  Visa Types
+                  Our Partners
                 </Link>
               </li>
               <li>

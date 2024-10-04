@@ -2,9 +2,13 @@ import Link from "next/link";
 import React from "react";
 
 const affiliateLinks = {
-  healthInsurance: {
+  publicHealthInsurance: {
     name: "Barmer",
     url: "https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5",
+  },
+  privateHealthInsurance: {
+    name: "Feather",
+    url: "https://feather-insurance.com/private-health-insurance?utm_source=hoc9lz2rfjmgtdp5",
   },
   legalInsurance: {
     name: "Feather",
@@ -20,7 +24,7 @@ const affiliateLinks = {
   },
   creditCard: {
     name: "Advanzia",
-    url: "https://refer.gebuhrenfrei.com/1yO7VQ",
+    url: "https://tell.tl/p/b1a/1z0idrw",
   },
   localGermanyBanking: {
     name: "Commerzbank",
