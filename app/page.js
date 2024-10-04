@@ -17,11 +17,9 @@ export default function Home() {
     <main>
       <Hero />
 
-      <Services />
-
-      <CarouselSection />
-
       <Promotion />
+
+      <Services />
 
       <Guide />
 
@@ -29,9 +27,9 @@ export default function Home() {
 
       <Pricing />
 
-      <About />
+      <CarouselSection />
 
-      
+      <About />
     </main>
   );
 }

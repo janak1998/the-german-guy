@@ -5,7 +5,7 @@ import RingBtn from "./RingBtn";
 const Guide = () => {
   return (
     <section
-      className="container px-4 py-10 mx-auto dark:bg-gray-900 dark:text-white rounded-lg shadow-lg"
+      className="container px-4 py-10 mx-auto mt-6 dark:bg-gray-900 dark:text-white rounded-lg shadow-lg"
       id="guide"
     >
       <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200">

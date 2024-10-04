@@ -5,7 +5,7 @@ const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="container px-4 py-10 mx-auto text-gray-600 rounded-lg shadow-lg body-font overflow-hidden dark:bg-gray-900 dark:text-gray-400"
+      className="container px-4 py-10 mx-auto text-gray-600 rounded-lg shadow-lg body-font overflow-hidden dark:bg-gray-900 dark:text-gray-400 mt-6"
     >
       <div className="flex flex-col text-center w-full mb-10">
         <h2 className="text-3xl lg:text-4xl font-bold title-font mb-2 text-gray-800 dark:text-gray-200">

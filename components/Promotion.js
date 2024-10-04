@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Promotion = () => {
   return (
-    <section className="container px-4 py-10 mx-auto rounded-lg shadow-md py-8 bg-gray-100 dark:bg-gray-900 mb-10 flex flex-col items-center">
+    <section className="container px-4 py-10 mx-auto mt-6 rounded-lg shadow-md py-8 bg-gray-100 dark:bg-gray-900 mb-10 flex flex-col items-center">
       <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-800 dark:text-gray-100 text-center">
         Latest Announcements & Offers
       </h2>

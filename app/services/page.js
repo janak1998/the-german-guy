@@ -67,7 +67,7 @@ const page = () => {
               {service.title === "After Arrival Setup" && <AffiliatePartners />}
 
               <em>
-                Note: Links might contain affilates. This allows us to earn
+                Note: Links might contain affiliates. This allows us to earn
                 little profit and reduce our service charge with no extra cost
                 to you
               </em>
