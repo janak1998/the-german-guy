@@ -99,11 +99,11 @@ const Page = () => {
         btn_label: "Get Started",
       },
     ],
-    "Transfer Money": [
+    "Money Transfer": [
       {
         name: "Wise",
         url: "https://wise.com/invite/ihpc/chitrakantis",
-        btn_label: "Secure Transfer",
+        btn_label: "Begin Transfer",
       },
     ],
     "Internet/Sim Card": [
@@ -257,13 +257,13 @@ const Page = () => {
                       className="card border-2 border-transparent hover:border-blue-600 rounded-lg overflow-hidden w-42 h-42 bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                     >
                       <div className="p-6 flex flex-col justify-between items-center h-full">
-                        <h3 className="card-title text-xl font-bold text-center mb-4 text-primary dark:text-gray-100">
+                        <h3 className="card-title text-lg font-semibold text-center mb-4 text-primary dark:text-gray-100">
                           {name}
                         </h3>
                         <Link
                           href={url}
                           target="_blank"
-                          className="btn btn-primary bg-blue-600 text-white py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300 w-[165px] lg:w-[150px] text-center"
+                          className="btn btn-primary bg-blue-600 text-white py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300 w-[165px] lg:w-[160px] text-center"
                         >
                           {btn_label}
                         </Link>
