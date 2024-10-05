@@ -1,16 +1,18 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Hamburger from "./Hamburger";
 import { ModeToggle } from "./Theme-btn";
+import scrollToSectionUtil from "@/utils/scrollToSectionUtil";
 
 const Navbar = () => {
   return (
@@ -31,13 +33,11 @@ const Navbar = () => {
                   Services
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/#pricing"
-                  className="block py-2 md:py-0 hover:text-blue-500"
-                >
-                  Pricing
-                </Link>
+              <li
+                className="block py-2 md:py-0 hover:text-blue-500 cursor-pointer"
+                onClick={() => scrollToSectionUtil("pricing", 50)}
+              >
+                Pricing
               </li>
               <li>
                 <Link
@@ -47,13 +47,11 @@ const Navbar = () => {
                   Our Partners
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/#about"
-                  className="block py-2 md:py-0 hover:text-blue-500"
-                >
-                  About
-                </Link>
+              <li
+                onClick={() => scrollToSectionUtil("about", 50)}
+                className="block py-2 md:py-0 hover:text-blue-500 cursor-pointer"
+              >
+                About
               </li>
             </ul>
             <Link
@@ -86,37 +84,35 @@ const Navbar = () => {
                   <SheetTitle className="font-bold my-4">
                     The German Guy
                   </SheetTitle>
-                  <SheetDescription>
-                    <div className="nav_links_wrapper flex flex-col gap-5 justify-center items-center">
-                      <ul className="flex flex-col justify-center items-center">
-                        <li>
-                          <Link
-                            href="/services"
-                            className=" block py-2 md:py-0"
-                          >
-                            Services
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/pricing" className=" block py-2 md:py-0">
-                            Pricing
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/contact" className=" block py-2 md:py-0">
-                            Visa Types
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/#about" className=" block py-2 md:py-0">
-                            About
-                          </Link>
-                        </li>
-                      </ul>
-                      <Button className="w-[50%]"> CONTACT US </Button>
-                    </div>
-                  </SheetDescription>
                 </SheetHeader>
+
+                <SheetFooter>
+                  <div className="nav_links_wrapper flex flex-col gap-5 justify-center items-center">
+                    <ul className="flex flex-col justify-center items-center">
+                      <li>
+                        <Link href="/services" className=" block py-2 md:py-0">
+                          Services
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/pricing" className=" block py-2 md:py-0">
+                          Pricing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/contact" className=" block py-2 md:py-0">
+                          Visa Types
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/#about" className=" block py-2 md:py-0">
+                          About
+                        </Link>
+                      </li>
+                    </ul>
+                    <Button className="w-[50%]"> CONTACT US </Button>
+                  </div>
+                </SheetFooter>
               </SheetContent>
             </Sheet>
           </div>
