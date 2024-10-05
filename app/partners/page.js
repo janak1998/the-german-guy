@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
 
 const Page = () => {
@@ -220,7 +221,7 @@ const Page = () => {
               </div>
             ) : (
               // Desktop View: Tab Buttons
-              <div className="flex justify-center gap-4">
+              <div className="hidden lg:flex justify-center gap-4">
                 {Object.keys(partners).map((type) => (
                   <button
                     key={type}
@@ -244,7 +245,7 @@ const Page = () => {
                 key={type}
                 ref={(el) => (sectionsRefs.current[index] = el)} // Add ref to section
                 data-type={type}
-                className="partner-section mb-8 border border-gray-400 dark:border-gray-700 py-6 rounded-lg lg:px-4 dark:bg-gray-800 shadow-lg"
+                className="partner-section mb-8 border border-gray-400 dark:border-gray-700 py-6 rounded-lg lg:px-4 dark:bg-gray-900 shadow-lg"
               >
                 <h2 className="text-2xl lg:text-3xl text-primary dark:text-white text-center font-bold title-font mb-4">
                   {type}
@@ -253,18 +254,19 @@ const Page = () => {
                   {services.map(({ name, btn_label, url }, idx) => (
                     <div
                       key={idx}
-                      className="card border dark:border-gray-700 rounded-lg overflow-hidden w-42 h-42 dark:bg-gray-700 shadow-md"
+                      className="card border-2 border-transparent hover:border-blue-600 rounded-lg overflow-hidden w-42 h-42 bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                     >
-                      <div className="p-4 flex flex-col justify-between items-center h-full">
-                        <h3 className="card-title text-xl font-semibold text-center mb-2 text-primary dark:text-gray-200">
+                      <div className="p-6 flex flex-col justify-between items-center h-full">
+                        <h3 className="card-title text-xl font-bold text-center mb-4 text-primary dark:text-gray-100">
                           {name}
                         </h3>
-                        <a
+                        <Link
                           href={url}
-                          className="btn btn-primary bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300 text-center w-[150px] lg:w-[135px]"
+                          target="_blank"
+                          className="btn btn-primary bg-blue-600 text-white py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300 w-[165px] lg:w-[150px] text-center"
                         >
                           {btn_label}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
