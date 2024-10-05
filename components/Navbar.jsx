@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/partners"
+                  href="/#"
                   className="block py-2 md:py-0 hover:text-blue-500"
                 >
                   Our Partners
@@ -98,13 +98,13 @@ const Navbar = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href="/pricing" className=" block py-2 md:py-0">
+                          <Link href="/#pricing" className=" block py-2 md:py-0">
                             Pricing
                           </Link>
                         </li>
                         <li>
-                          <Link href="/contact" className=" block py-2 md:py-0">
-                            Visa Types
+                          <Link href="/#" className=" block py-2 md:py-0">
+                            Our Partners
                           </Link>
                         </li>
                         <li>
