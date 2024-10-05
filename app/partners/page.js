@@ -196,7 +196,7 @@ const Page = () => {
           {/* Top Navigation */}
           <div
             ref={stickyNavRef}
-            className="sticky top-[49px] lg:top-[60px] bg-white dark:bg-gray-900 z-10 p-4 mb-4 shadow-md"
+            className="sticky top-[49px] lg:top-[65px] bg-white dark:bg-gray-900 z-10 p-4 mb-4 shadow-md"
           >
             {isMobile ? (
               // Mobile View: Dropdown Menu
