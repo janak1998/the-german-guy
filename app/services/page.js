@@ -60,17 +60,20 @@ const page = () => {
                 btnText={service.cta}
               />
 
-              <p className="mb-4 mt-4 text-center lg:text-left">
-                Here are our quick recommindation for some common services:
-              </p>
-
-              {service.title === "After Arrival Setup" && <AffiliatePartners />}
-
-              <em>
-                Note: Links might contain affiliates. This allows us to earn
-                little profit and reduce our service charge with no extra cost
-                to you
-              </em>
+              {service.title === "After Arrival Setup" && (
+                <>
+                  {" "}
+                  <p className="mb-4 mt-4 text-center lg:text-left">
+                    Here are our quick recommindation for some common services:
+                  </p>
+                  <AffiliatePartners />
+                  <em>
+                    Note: Links might contain affiliates. This allows us to earn
+                    little profit and reduce our service charge with no extra
+                    cost to you
+                  </em>
+                </>
+              )}
             </div>
           </div>
         </div>
