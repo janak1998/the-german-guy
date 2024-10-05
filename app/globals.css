@@ -95,3 +95,10 @@ body {
     flex-direction: column-reverse;
   }
 }
+
+.hamburger_menu {
+  display: flex;
+  @media screen and (min-width: 1023px) {
+    display: none;
+  }
+}

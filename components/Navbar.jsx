@@ -58,7 +58,7 @@ const Navbar = () => {
             </ul>
             <Link
               href="/#talk-to-team"
-              className="hidden font-bold md:block mr-4 bg-primary text-secondary
+              className="hidden font-bold lg:block mr-4 bg-primary text-secondary
               px-3 py-2 rounded-lg
               "
             >
@@ -76,7 +76,7 @@ const Navbar = () => {
             </Link>
           </div>
           <ModeToggle />
-          <div className="md:hidden flex">
+          <div className="hamburger_menu">
             <Sheet>
               <SheetTrigger>
                 <Hamburger />

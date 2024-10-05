@@ -122,7 +122,7 @@ const Page = () => {
   // Update isMobile state when screen size changes
   useEffect(() => {
     const checkMobileView = () => {
-      setIsMobile(window.innerWidth < 768); // Mobile view if width < 768px
+      setIsMobile(window.innerWidth <= 820); // Mobile view if width < 768px
     };
 
     window.addEventListener("resize", checkMobileView);
@@ -195,7 +195,7 @@ const Page = () => {
           {/* Top Navigation */}
           <div
             ref={stickyNavRef}
-            className="sticky top-[49px] top-[60px] bg-white dark:bg-gray-900 z-10 p-4 mb-4 shadow-md"
+            className="sticky top-[49px] lg:top-[60px] bg-white dark:bg-gray-900 z-10 p-4 mb-4 shadow-md"
           >
             {isMobile ? (
               // Mobile View: Dropdown Menu
