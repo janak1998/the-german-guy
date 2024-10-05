@@ -31,17 +31,17 @@ const Page = () => {
         btn_label: "Explore Plans",
       },
       {
-        name: "Dog liability Insurance",
+        name: "Dog Liability Insurance",
         url: "https://feather-insurance.com/dog-liability-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
       {
-        name: "Personal liability Insurance",
+        name: "Personal Liability Insurance",
         url: "https://feather-insurance.com/personal-liability-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
       {
-        name: "Household contents Insurance",
+        name: "Household Contents Insurance",
         url: "https://feather-insurance.com/household-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
@@ -80,7 +80,7 @@ const Page = () => {
     ],
     "Credit Cards": [
       {
-        name: "Credit Card Advanzia",
+        name: "Advanzia",
         url: "https://tell.tl/p/b1a/1z0idrw",
         btn_label: "Apply Now",
       },
