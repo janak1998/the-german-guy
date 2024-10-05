@@ -1,6 +1,9 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
-
+import { GiHealthNormal } from "react-icons/gi";
+import { TbDentalBroken } from "react-icons/tb";
 const Page = () => {
   const partners = {
     Insurance: [
@@ -8,21 +11,25 @@ const Page = () => {
         name: "Public Health Insurance",
         url: "https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
+        Icon: GiHealthNormal,
       },
       {
         name: "Private Health Insurance",
         url: "https://feather-insurance.com/private-health-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
+        Icon: GiHealthNormal,
       },
       {
         name: "Dental Insurance",
         url: "https://feather-insurance.com/dental-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
+        Icon: TbDentalBroken,
       },
       {
         name: "Life Insurance",
         url: "https://feather-insurance.com/life-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
+        icon_svg: "/assets/life-insurance.svg",
       },
       {
         name: "Disability Insurance",
@@ -250,24 +257,37 @@ const Page = () => {
                   {type}
                 </h2>
                 <div className="service-cards px-2 flex flex-wrap justify-center items-center gap-4">
-                  {services.map(({ name, btn_label, url }, idx) => (
-                    <div
-                      key={idx}
-                      className="card border dark:border-gray-700 rounded-lg overflow-hidden w-42 h-42 dark:bg-gray-700 shadow-md"
-                    >
-                      <div className="p-4 flex flex-col justify-between items-center h-full">
-                        <h3 className="card-title text-xl font-semibold text-center mb-2 text-primary dark:text-gray-200">
-                          {name}
-                        </h3>
-                        <a
-                          href={url}
-                          className="btn btn-primary bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300 text-center w-[150px] lg:w-[135px]"
-                        >
-                          {btn_label}
-                        </a>
+                  {services.map(
+                    ({ name, btn_label, url, Icon, icon_svg }, idx) => (
+                      <div
+                        key={idx}
+                        className="card border-2 border-transparent hover:border-blue-600 rounded-lg overflow-hidden w-42 h-42 bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                      >
+                        <div className="p-6 flex flex-col justify-between items-center h-full">
+                          {Icon && <Icon />}
+                          {icon_svg && (
+                            <Image
+                              src={icon_svg}
+                              width={50}
+                              height={50}
+                              className="stroke-white fill-white dark:stroke-black dark:fill-black"
+                            />
+                          )}
+
+                          <h3 className="card-title mt-2 text-lg font-medium text-center mb-4 text-primary dark:text-gray-100">
+                            {name}
+                          </h3>
+                          <Link
+                            href={url}
+                            target="_blank"
+                            className="btn btn-primary bg-blue-600 text-white py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300 w-[165px] lg:w-[150px] text-center"
+                          >
+                            {btn_label}
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </div>
               </div>
             ))}
