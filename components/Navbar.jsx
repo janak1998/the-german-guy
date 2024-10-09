@@ -82,15 +82,15 @@ const Navbar = () => {
                             href="/services"
                             className=" block py-2 md:py-0"
                           >
-                            Services
+                            <SheetClose>Services</SheetClose>
                           </Link>
-                        </li> 
+                        </li>
                         <li>
                           <Link
                             href="/#pricing"
                             className=" block py-2 md:py-0"
                           >
-                            Pricing
+                            <SheetClose>Pricing</SheetClose>
                           </Link>
                         </li>
                         <li>
@@ -98,12 +98,12 @@ const Navbar = () => {
                             href="/partners"
                             className=" block py-2 md:py-0"
                           >
-                            Our Partners
+                            <SheetClose>Our Partners</SheetClose>
                           </Link>
                         </li>
                         <li>
                           <Link href="/#about" className=" block py-2 md:py-0">
-                            About
+                            <SheetClose>About</SheetClose>
                           </Link>
                         </li>
                       </ul>
