@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import Hamburger from "./Hamburger";
 import { ModeToggle } from "./Theme-btn";
+import SocialLinks from "./SocialLinks";
 
 const Navbar = () => {
   return (
@@ -119,7 +120,9 @@ const Navbar = () => {
                           </Link>
                         </li>
                       </ul>
-                      <Button className="w-[50%]"> CONTACT US </Button>
+                      <Button className="w-[50%] mb-6"> CONTACT US </Button>
+
+                      <SocialLinks />
                     </div>
                   </SheetDescription>
                 </SheetHeader>
