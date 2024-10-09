@@ -84,7 +84,7 @@ const Navbar = () => {
                           >
                             Services
                           </Link>
-                        </li>
+                        </li> 
                         <li>
                           <Link
                             href="/#pricing"
