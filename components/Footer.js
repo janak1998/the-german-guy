@@ -23,7 +23,7 @@ const Footer = () => {
             About
           </Link>
         </nav>
-        <div className="socials_wrapper">
+        <div className="socials_wrapper mx-auto">
           <SocialLinks />
         </div>
         <div className="text-center">
