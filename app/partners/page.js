@@ -2,8 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
-import { GiHealthNormal } from "react-icons/gi";
-import { TbDentalBroken } from "react-icons/tb";
+
 const Page = () => {
   const partners = {
     Insurance: [
@@ -11,25 +10,21 @@ const Page = () => {
         name: "Public Health Insurance",
         url: "https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
-        Icon: GiHealthNormal,
       },
       {
         name: "Private Health Insurance",
         url: "https://feather-insurance.com/private-health-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
-        Icon: GiHealthNormal,
       },
       {
         name: "Dental Insurance",
         url: "https://feather-insurance.com/dental-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
-        Icon: TbDentalBroken,
       },
       {
         name: "Life Insurance",
         url: "https://feather-insurance.com/life-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
-        icon_svg: "/assets/life-insurance.svg",
       },
       {
         name: "Disability Insurance",
