@@ -28,20 +28,20 @@ const Navbar = () => {
         <div className="flex justify-center items-center">
           <div className="nav_links_wrapper flex gap-5 items-center ">
             <ul className="md:flex md:items-center md:space-x-6 hidden md:block p-4">
-              <li>
-                <Link
-                  href="/services"
-                  className="block py-1 md:py-0 hover:text-blue-500"
-                >
-                  Services
-                </Link>
-              </li>
               {/* <li
                 className="block py-2 md:py-0 hover:text-blue-500 cursor-pointer"
                 onClick={() => scrollToSectionUtil("pricing", 50)}
               >
                 Pricing
               </li> */}
+              <li>
+                <Link
+                  href="/"
+                  className="block py-1 md:py-0 hover:text-blue-500"
+                >
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/#pricing"
@@ -130,34 +130,6 @@ const Navbar = () => {
                     </div>
                   </SheetFooter>
                 </SheetHeader>
-
-                <SheetFooter>
-                  <div className="nav_links_wrapper flex flex-col gap-5 justify-center items-center">
-                    <ul className="flex flex-col justify-center items-center">
-                      <li>
-                        <Link href="/services" className=" block py-2 md:py-0">
-                          Services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/pricing" className=" block py-2 md:py-0">
-                          Pricing
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/contact" className=" block py-2 md:py-0">
-                          Visa Types
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/#about" className=" block py-2 md:py-0">
-                          About
-                        </Link>
-                      </li>
-                    </ul>
-                    <Button className="w-[50%]"> CONTACT US </Button>
-                  </div>
-                </SheetFooter>
               </SheetContent>
             </Sheet>
           </div>
