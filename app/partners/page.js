@@ -32,17 +32,17 @@ const Page = () => {
         btn_label: "Explore Plans",
       },
       {
-        name: "Dog liability Insurance",
+        name: "Dog Liability Insurance",
         url: "https://feather-insurance.com/dog-liability-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
       {
-        name: "Personal liability Insurance",
+        name: "Personal Liability Insurance",
         url: "https://feather-insurance.com/personal-liability-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
       {
-        name: "Household contents Insurance",
+        name: "Household Contents Insurance",
         url: "https://feather-insurance.com/household-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
@@ -81,7 +81,7 @@ const Page = () => {
     ],
     "Credit Cards": [
       {
-        name: "Credit Card Advanzia",
+        name: "Advanzia",
         url: "https://tell.tl/p/b1a/1z0idrw",
         btn_label: "Apply Now",
       },
@@ -100,11 +100,11 @@ const Page = () => {
         btn_label: "Get Started",
       },
     ],
-    "Transfer Money": [
+    "Money Transfer": [
       {
         name: "Wise",
         url: "https://wise.com/invite/ihpc/chitrakantis",
-        btn_label: "Secure Transfer",
+        btn_label: "Begin Transfer",
       },
     ],
     "Internet/Sim Card": [
@@ -197,7 +197,7 @@ const Page = () => {
           {/* Top Navigation */}
           <div
             ref={stickyNavRef}
-            className="sticky top-[49px] lg:top-[60px] bg-white dark:bg-gray-900 z-10 p-4 mb-4 shadow-md"
+            className="sticky top-[49px] lg:top-[65px] bg-white dark:bg-gray-900 z-10 p-4 mb-4 shadow-md"
           >
             {isMobile ? (
               // Mobile View: Dropdown Menu
@@ -222,7 +222,7 @@ const Page = () => {
               </div>
             ) : (
               // Desktop View: Tab Buttons
-              <div className="flex justify-center gap-4">
+              <div className="hidden lg:flex justify-center gap-4">
                 {Object.keys(partners).map((type) => (
                   <button
                     key={type}
@@ -246,7 +246,7 @@ const Page = () => {
                 key={type}
                 ref={(el) => (sectionsRefs.current[index] = el)} // Add ref to section
                 data-type={type}
-                className="partner-section mb-8 border border-gray-400 dark:border-gray-700 py-6 rounded-lg lg:px-4 dark:bg-gray-800 shadow-lg"
+                className="partner-section mb-8 border border-gray-400 dark:border-gray-700 py-6 rounded-lg lg:px-4 dark:bg-gray-900 shadow-lg"
               >
                 <h2 className="text-2xl lg:text-3xl text-primary dark:text-white text-center font-bold title-font mb-4">
                   {type}

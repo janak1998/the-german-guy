@@ -56,7 +56,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       screens: {
-        lg: "1025px",
+        lgx: "1025px",
       },
     },
   },
