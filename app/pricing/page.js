@@ -1,4 +1,5 @@
 import CalculatePrice from "@/components/CalculatePrice";
+import CarouselSection from "@/components/Carousel";
 import RingBtn from "@/components/RingBtn";
 import Image from "next/image";
 
@@ -86,6 +87,8 @@ const Page = () => {
 
         <RingBtn />
       </div>
+
+      <CarouselSection />
     </main>
   );
 };
