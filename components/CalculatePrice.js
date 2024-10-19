@@ -110,8 +110,10 @@ const CalculatePrice = () => {
               onChange={(e) => setSubOption(e.target.value)}
               className="mr-2"
             />
-            {`${optionKey.charAt(0).toUpperCase() + optionKey.slice(1)} - Rs ${
-              services[activeTab].subOptions[optionKey]
+            {`${optionKey.charAt(0).toUpperCase() + optionKey.slice(1)} - ${
+              typeof services[activeTab].subOptions[optionKey] === "number"
+                ? `Rs ${services[activeTab].subOptions[optionKey]}`
+                : services[activeTab].subOptions[optionKey]
             }`}
           </label>
         ))}
