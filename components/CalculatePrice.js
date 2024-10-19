@@ -26,7 +26,7 @@ const CalculatePrice = () => {
       subOptions: {
         "Pflege (Nursing)": 250000,
         IT: 250000,
-        " Koch/Köchin": 220000,
+        "Koch/Köchin": 220000,
         Büromanagement: 220000,
         "Hotelfachmann/-frau": 220000,
         Other: "We'll estimate the cost based on your field",
