@@ -44,7 +44,7 @@ const Page = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 mb-6 w-full max-w-[350px] px-5 ring_effect transition-transform duration-300 hover:scale-105"
+            className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 mb-6 w-full max-w-[350px] px-5 ring_effect transition-transform duration-300 hover:scale-105 border border-gray-300 dark:border-gray-600"
           >
             <span className="bg-gray-400 flex justify-center items-center w-[75px] h-[75px] rounded-full mb-4">
               <Image
