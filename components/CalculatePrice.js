@@ -10,15 +10,15 @@ const CalculatePrice = () => {
     bachelors: {
       name: "Bachelors",
       subOptions: {
-        public: 1000,
-        private: 2000,
+        public: 30000,
+        private: 20000,
       },
     },
     masters: {
       name: "Masters",
       subOptions: {
-        public: 1000,
-        private: 2000,
+        public: 35000,
+        private: 25000,
       },
     },
     ausbildung: {
@@ -36,7 +36,7 @@ const CalculatePrice = () => {
       },
     },
     highSkilledWork: {
-      name: "High Skilled Work Permit",
+      name: "Skilled Professionals",
       subOptions: {
         option1: 2500,
         option2: 2700,
@@ -53,14 +53,14 @@ const CalculatePrice = () => {
 
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">
-        Calculate Your Cost
-      </h1>
+      <h2 className="text-3xl font-bold mb-6 text-center">
+        Estimate Your Cost
+      </h2>
 
       {/* Tabs for Service Selection */}
       <div className="flex flex-wrap justify-center gap-4 mb-6">
         <span className="flex w-full justify-center">
-          Please select the service you want
+          Choose Your Visa Service
         </span>
         {Object.keys(services).map((key) => (
           <button
