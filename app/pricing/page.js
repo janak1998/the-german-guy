@@ -35,6 +35,12 @@ const Page = () => {
         "This visa allows professionals to come to Germany for employment purposes. You need to have a signed work contract with a German company, and the contract should require your presence in Germany. Depending on the company, you may or may not need a language certification. You must provide proof of your qualifications, and no separate financial means are required as long as your gross salary meets the specified minimum.",
       icon: "/assets/job_seeker.svg",
     },
+    {
+      title: "Voluntary Service Visa",
+      description:
+        "The Voluntary Service Visa allows young individuals to engage in meaningful social, ecological, or cultural projects in Germany. Ideal for those seeking to gain practical work experience and immerse themselves in German culture, this visa covers programs like the FSj (Freiwilliges Soziales Jahr) and VFD (Voluntary Federal Service). Participants contribute to community welfare, improve their language skills, and build professional networks, making it a rewarding experience both personally and professionally.",
+      icon: "/assets/voluntary_service_icon.svg",
+    },
   ];
 
   return (

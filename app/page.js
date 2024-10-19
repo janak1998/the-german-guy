@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import CarouselSection from "@/components/Carousel";
-import DynamicPricing from "@/components/DynamicPricing";
 import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import Guide from "@/components/Guide";
@@ -27,8 +26,6 @@ export default function Home() {
       <FAQs />
 
       <Pricing />
-
-      {/* <DynamicPricing /> */}
 
       <CarouselSection />
 

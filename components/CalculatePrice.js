@@ -10,36 +10,54 @@ const CalculatePrice = () => {
     bachelors: {
       name: "Bachelors",
       subOptions: {
-        public: 30000,
-        private: 20000,
+        public: 40000,
+        private: 25000,
       },
     },
     masters: {
       name: "Masters",
       subOptions: {
         public: 35000,
-        private: 25000,
+        private: 20000,
       },
     },
     ausbildung: {
       name: "Ausbildung",
       subOptions: {
-        option1: 1200,
-        option2: 1300,
+        "Pflege (Nursing)": 250000,
+        IT: 250000,
+        " Koch/Köchin": 220000,
+        Büromanagement: 220000,
+        "Hotelfachmann/-frau": 220000,
+        Other: "We'll estimate the cost based on your field",
       },
     },
     aupair: {
       name: "Au Pair",
       subOptions: {
-        option1: 800,
-        option2: 900,
+        Germany: 150000,
+        Austria: 200000,
+        Netherlands: 150000,
+        Luxembourg: 150000,
+        Other: "We'll estimate the cost based on your field",
       },
     },
     highSkilledWork: {
       name: "Skilled Professionals",
       subOptions: {
-        option1: 2500,
-        option2: 2700,
+        Visa: 150000,
+      },
+    },
+    chancenkarte: {
+      name: "Chancenkarte (Opportunity Card)",
+      subOptions: {
+        Visa: 120000,
+      },
+    },
+    volunteerVisa: {
+      name: "Voluntary Service Visa",
+      subOptions: {
+        "FSJ/BFD": 150000,
       },
     },
   };
