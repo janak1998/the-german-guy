@@ -1,11 +1,12 @@
-import React from "react";
+import RingBtn from "./RingBtn";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="container px-4 py-10 mx-auto text-gray-600 rounded-lg shadow-lg body-font overflow-hidden dark:bg-gray-900 dark:text-gray-400 mt-6"
+      className="container px-4 py-10 mx-auto text-gray-600 rounded-lg shadow-lg body-font overflow-hidden dark:bg-gray-900 dark:text-gray-400 mt-6 flex-col justify-center items-center"
     >
       <div className="flex flex-col text-center w-full mb-10">
         <h2 className="text-3xl lg:text-4xl font-bold title-font mb-2 text-gray-800 dark:text-gray-200">
@@ -261,6 +262,14 @@ const Pricing = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center items-center mx-auto mt-4">
+        <RingBtn
+          className="w-max-[500px] lg:w-fit mx-auto"
+          btnText={"Explore Our Services"}
+          url={"/pricing"}
+          target={"_self"}
+        />
       </div>
     </section>
   );
