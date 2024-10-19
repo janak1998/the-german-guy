@@ -5,9 +5,9 @@ import Image from "next/image";
 const Page = () => {
   const services = [
     {
-      title: "Job Seeker Visa",
+      title: "Chancenkarte",
       description:
-        "The Job Seeker Visa allows professionals to travel to Germany for the purpose of finding employment. With this visa, you have up to six months to search for a job in your field. You must have a recognized university degree or an equivalent qualification and demonstrate adequate financial means to support yourself during your stay. A language certificate may not be necessary, but it is advantageous. Once you secure a job, you can convert your visa into a residence permit for employment.",
+        "The Chancenkarte(Oppurtunity card) allows professionals to travel to Germany for the purpose of finding employment. With this visa, you have up to six months to search for a job in your field. You must have a recognized university degree or an equivalent qualification and demonstrate adequate financial means to support yourself during your stay. A language certificate may not be necessary, but it is advantageous. Once you secure a job, you can convert your visa into a residence permit for employment.",
       icon: "/assets/job_seeker.svg",
     },
     {

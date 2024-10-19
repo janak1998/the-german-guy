@@ -12,64 +12,45 @@ import Image from "next/image";
 
 const studentTestimonials = [
   {
-    image: "https://via.placeholder.com/150?text=Sarah+J",
-    name: "Sarah Johnson",
+    image: "https://via.placeholder.com/150?text=Neeruta",
+    name: "Neeruta",
     description:
-      "Thanks to The German Guy, my university application process was seamless! Their step-by-step guidance made everything so easy.",
+      "Your advice has been invaluable and I am so grateful to have you as a mentor.Your support has been an important part of my journey and I want to express my deepest gratitude for your mentorship.",
   },
   {
-    image: "https://via.placeholder.com/150?text=Michael+S",
-    name: "Michael Smith",
+    image: "https://via.placeholder.com/150?text=Prasesh",
+    name: "Prasesh",
     description:
-      "The support I received for both job applications and visa processing was amazing. I couldn't have done it without them!",
+      "Thank you Dai, for your quick and active support in helping me secure accommodation in Germany. Your assistance made the process much easier. I really appreciate it.",
   },
   {
-    image: "https://via.placeholder.com/150?text=Anna+K",
-    name: "Anna Kim",
+    image: "https://via.placeholder.com/150?text=Kushal+K",
+    name: "Kushal Kandel",
     description:
-      "From crafting my resume to university selection, The German Guy helped me every step of the way. Highly recommend!",
+      "Very kind person who assists you in every way possible without any hindrance. Highly recommended!",
   },
   {
-    image: "https://via.placeholder.com/150?text=David+R",
-    name: "David Rodriguez",
+    image: "https://via.placeholder.com/150?text=Aayushma+G",
+    name: "Aayushma Giri",
     description:
-      "I was nervous about moving to Germany, but The German Guy made the transition smoother than I expected.",
+      "Thank you for your  help and support without any hesitation, during the processing periods. Your help and suggestions means alot for me. ",
   },
   {
-    image: "https://via.placeholder.com/150?text=Emily+T",
-    name: "Emily Taylor",
-    description:
-      "Their team helped me find the best university and supported me through the entire process. Truly a life-changing experience!",
+    image: "https://via.placeholder.com/150?text=Pukar+S",
+    name: "Pukar Tha Shrestha",
+    description: "I am getting constant valuable replies and suggestions ",
   },
   {
-    image: "https://via.placeholder.com/150?text=John+P",
-    name: "John Patel",
+    image: "https://via.placeholder.com/150?text=Sanjeev+T",
+    name: "Sanjeev Kumar Thakur",
     description:
-      "The German Guy not only helped with my application but also provided valuable tips for settling into life in Germany.",
+      "The German Guy helped throughout my germany visa process. I got quick responses anytime i messaged. ",
   },
   {
-    image: "https://via.placeholder.com/150?text=Olivia+M",
-    name: "Olivia Martinez",
+    image: "https://via.placeholder.com/150?text=Maya+O",
+    name: "Maya ojha",
     description:
-      "I can't thank them enough for helping me secure my dream job in Germany. The application process was so easy with their help!",
-  },
-  {
-    image: "https://via.placeholder.com/150?text=Ethan+L",
-    name: "Ethan Lee",
-    description:
-      "Their personalized advice and constant support made all the difference during my move to Germany. Highly professional team!",
-  },
-  {
-    image: "https://via.placeholder.com/150?text=Sophia+W",
-    name: "Sophia Williams",
-    description:
-      "The German Guy took care of everything—from my resume to my job application. I couldn’t be happier with their service!",
-  },
-  {
-    image: "https://via.placeholder.com/150?text=James+B",
-    name: "James Brown",
-    description:
-      "I was lost when it came to applying to German universities, but The German Guy walked me through every single detail. Incredible service!",
+      "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
   },
 ];
 
