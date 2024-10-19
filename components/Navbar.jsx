@@ -44,7 +44,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/#pricing"
+                  href="/pricing"
                   className="block py-1 md:py-0 hover:text-blue-500"
                 >
                   Pricing
@@ -100,10 +100,7 @@ const Navbar = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link
-                            href="/#pricing"
-                            className=" block py-2 md:py-0"
-                          >
+                          <Link href="/pricing" className=" block py-2 md:py-0">
                             <SheetClose>Pricing</SheetClose>
                           </Link>
                         </li>
