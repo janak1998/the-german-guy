@@ -18,12 +18,6 @@ import ContactBtn from "./ContactBtn";
 
 const Navbar = () => {
   const router = useRouter();
-  const isHomePage = router.pathname === "/";
-  const currentUrl = router.asPath;
-  const home = process.env.NEXT_PUBLIC_API_URL;
-  console.log(router.home, home);
-  const currentUrlLocal = window.location.href;
-  console.log(currentUrlLocal);
 
   return (
     <nav className="bg-background/50 sticky top-0  p-1 backdrop-blur border-b z-10">
@@ -41,25 +35,6 @@ const Navbar = () => {
               >
                 Pricing
               </li> */}
-              {isHomePage === "/" ? (
-                <li>
-                  <Link
-                    href="/"
-                    className="block py-1 md:py-0 hover:text-blue-500"
-                  >
-                    Home
-                  </Link>
-                </li>
-              ) : (
-                <li>
-                  <Link
-                    href="/"
-                    className="block py-1 md:py-0 hover:text-blue-500"
-                  >
-                    Go Home
-                  </Link>
-                </li>
-              )}
 
               <li>
                 <Link
