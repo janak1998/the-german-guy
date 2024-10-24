@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Button } from "./ui/button";
 import {
   Sheet,
   SheetClose,
@@ -13,11 +12,19 @@ import {
 } from "@/components/ui/sheet";
 import Hamburger from "./Hamburger";
 import { ModeToggle } from "./Theme-btn";
-import scrollToSectionUtil from "@/utils/scrollToSectionUtil";
+import { useRouter } from "next/navigation";
 import SocialLinks from "./SocialLinks";
 import ContactBtn from "./ContactBtn";
 
 const Navbar = () => {
+  const router = useRouter();
+  const isHomePage = router.pathname === "/";
+  const currentUrl = router.asPath;
+  const home = process.env.NEXT_PUBLIC_API_URL;
+  console.log(router.home, home);
+  const currentUrlLocal = window.location.href;
+  console.log(currentUrlLocal);
+
   return (
     <nav className="bg-background/50 sticky top-0  p-1 backdrop-blur border-b z-10">
       <div className="container mx-auto flex justify-between items-center">
@@ -34,14 +41,26 @@ const Navbar = () => {
               >
                 Pricing
               </li> */}
-              <li>
-                <Link
-                  href="/"
-                  className="block py-1 md:py-0 hover:text-blue-500"
-                >
-                  Home
-                </Link>
-              </li>
+              {isHomePage === "/" ? (
+                <li>
+                  <Link
+                    href="/"
+                    className="block py-1 md:py-0 hover:text-blue-500"
+                  >
+                    Home
+                  </Link>
+                </li>
+              ) : (
+                <li>
+                  <Link
+                    href="/"
+                    className="block py-1 md:py-0 hover:text-blue-500"
+                  >
+                    Go Home
+                  </Link>
+                </li>
+              )}
+
               <li>
                 <Link
                   href="/pricing"
