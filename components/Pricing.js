@@ -185,7 +185,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                10 additional support sessions
+                Additional support sessions
               </li>
             </ul>
             <button className="flex items-center justify-center mt-auto text-white bg-[#6C63FF] border-0 py-2 px-4 w-full focus:outline-none hover:bg-[#5A52D1] rounded">

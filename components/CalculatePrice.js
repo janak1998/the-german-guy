@@ -60,6 +60,12 @@ const CalculatePrice = () => {
         "FSJ/BFD": 150000,
       },
     },
+    subscription: {
+      name: "Personal Guidance Plan",
+      subOptions: {
+        Monthly: 7500,
+      },
+    },
   };
 
   const getPrice = () => {
@@ -99,22 +105,31 @@ const CalculatePrice = () => {
       </div>
 
       {/* Sub-options for each service */}
-      <div className="border border-gray-300 rounded-lg p-6 shadow-md">
+      <div className="border border-gray-300 rounded-lg p-6 shadow-md gap-2 flex flex-col">
         {Object.keys(services[activeTab].subOptions).map((optionKey) => (
-          <label className="block mb-2" key={optionKey}>
+          <label
+            className="block cursor-pointer transition-colors duration-200 hover:text-blue-500"
+            key={optionKey}
+          >
             <input
               type="radio"
               name="subOption"
               value={optionKey}
               checked={subOption === optionKey}
               onChange={(e) => setSubOption(e.target.value)}
-              className="mr-2"
+              className="mr-2 accent-blue-500 transition-colors duration-200 ease-in-out "
             />
-            {`${optionKey.charAt(0).toUpperCase() + optionKey.slice(1)} - ${
-              typeof services[activeTab].subOptions[optionKey] === "number"
-                ? `Rs ${services[activeTab].subOptions[optionKey]}`
-                : services[activeTab].subOptions[optionKey]
-            }`}
+            <span
+              className={`${
+                subOption === optionKey ? "font-semibold text-blue-600" : ""
+              }`}
+            >
+              {`${optionKey.charAt(0).toUpperCase() + optionKey.slice(1)} - ${
+                typeof services[activeTab].subOptions[optionKey] === "number"
+                  ? `Rs ${services[activeTab].subOptions[optionKey]}`
+                  : services[activeTab].subOptions[optionKey]
+              }`}
+            </span>
           </label>
         ))}
       </div>

@@ -10,7 +10,7 @@ const Guide = () => {
       id="guide"
     >
       <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200">
-        Your Path to Germany in 4 Simple Steps
+        Your Path to Germany in 5 Simple Steps
       </h2>
       <div className="flex flex-col lg:flex-row lg:space-x-8">
         <div className="lg:w-1/2 space-y-6">
@@ -42,7 +42,15 @@ const Guide = () => {
           </div>
           <div className="dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">
-              Step 4: Get Ready for Your New Life in Germany
+              Step 4: Complete Visa Guidance 
+            </h3>
+            <p>
+            Get full guidance through every step of your visa application process.
+            </p>
+          </div>
+          <div className="dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-2">
+              Step 5: Get Ready for Your New Life in Germany
             </h3>
             <p>
               Prepare for your move with our comprehensive pre-departure

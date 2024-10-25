@@ -52,6 +52,12 @@ const studentTestimonials = [
     description:
       "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
   },
+  {
+    image: "https://via.placeholder.com/150?text=Swarup+K",
+    name: "Swarup Koirala",
+    description:
+      "I have done all the processes for my masters degree programme till I get the visa by consulting TGG. He is very helpful guy and give replies to you on time. ",
+  },
 ];
 
 const CarouselSection = () => {

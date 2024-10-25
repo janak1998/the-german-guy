@@ -12,17 +12,17 @@ const FAQs = () => {
     {
       question: "How long does the visa application process take?",
       answer:
-        "Getting your visa sorted out can take a few weeks and how long exactly depends on the type of visa you’re applying for and how busy the German embassy or consulate in Kathmandu is. To make sure everything goes smoothly, it’s a good idea to kick off the process well before you plan to start your journey. That way, you’ll have plenty of time to handle everything without any stress. For more info. please follow the embassy website.",
+        "Getting your visa sorted out can take a few weeks and how long exactly depends on the type of visa you’re applying for and how busy the German embassy or consulate in Kathmandu is. To make sure everything goes smoothly, it’s a good idea to kick off the process well before you plan to start your journey. That way, you’ll have plenty of time to handle everything without any stress. For more info, please follow the embassy website ( https://kathmandu.diplo.de/np-de )",
     },
     {
       question: "How much money does it take in total?",
       answer:
-        "For students, here's a breakdown to help you plan: • Blocked Account: ~ 11,500 € • Processing expenses (including visa fee, uni admission fee, insurance): ~ 1,000 € • Travel: ~ 600 € • First-month expenses: ~ 1,500 €(rent, deposit, etc) • Other: ~ 1,000 € Keep in mind, these numbers might change based on your situation, university and the city you're headed to. Exact figure depends on your contract and the type of visa you are applying for.",
+        "For students, here's a breakdown to help you plan: • Blocked Account: ~ 11,904 € • Processing expenses (including visa fee, uni admission fee, insurance): ~ 1,000 € • Travel: ~ 600 € • First-month expenses: ~ 1,500 €(rent, deposit, etc) • Other: ~ 1,000 € Keep in mind, these numbers might change based on your situation, university and the city you're headed to. Exact figure depends on your contract and the type of visa you are applying for.",
     },
     {
-      question: "Is German language reuired?",
+      question: "Is German language required?",
       answer:
-        "In most cases, yes, but there are exceptions where it's not necessary. For instance, if you're coming for a English taught program, or a job that have only English requirements, or your au-pair speaks a language other than German, or your contract provider agrees to bring you without the language requirement and many more scenarios. It really depends on your unique situation, contract, and the type of visa you are applying for. Nevertheless knowing German can be super helpful in your everyday life and when you're looking for a job. It adds an extra layer of ease and opens up more opportunities for you.",
+        "In most cases, yes, but there are exceptions where it's not necessary. For instance, if you're coming for a English taught program, or a job that have only English requirements, or your au-pair speaks a language other than German, or your contract provider agrees to bring you without the language requirement and many more scenarios. It really depends on your unique situation, contract, and the type of visa you are applying for. Nevertheless knowing German can be super helpful in your everyday life and when you're looking for a job. It adds an extra layer of ease and opens up more opportunities for you. If you like to learn German, feel free to join TGG German langugae WhatsApp Group( https://chat.whatsapp.com/Eo05CiAwzLsDtfMeQvyJjU )",
     },
     {
       question: "What is the situation of Au Pair / Ausbildung visa rate?",
@@ -60,7 +60,21 @@ const FAQs = () => {
                   : "max-h-0 opacity-0 overflow-hidden"
               }`}
             >
-              {faq.answer}
+              {faq.answer.split(" ").map((word, idx) =>
+                word.startsWith("https://") ? (
+                  <a
+                    href={word}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={idx}
+                    className="hover:text-blue-500"
+                  >
+                    Link ↗
+                  </a>
+                ) : (
+                  word + " "
+                )
+              )}
             </div>
           </div>
         ))}

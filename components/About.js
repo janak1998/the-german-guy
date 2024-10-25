@@ -32,8 +32,8 @@ const About = () => {
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             Recognizing the challenges faced by international students and
-            professionals—such as language barriers, visa complexities, and
-            accommodation hurdles—we founded The German Guy (TGG). Our mission
+            professionals such as language barriers, visa complexities, and
+            accommodation hurdles we founded TGG (The German Guy). Our mission
             is to ease the transition for those aspiring to study or work in
             Germany.
           </p>

@@ -38,10 +38,10 @@ const Navbar = () => {
 
               <li>
                 <Link
-                  href="/pricing"
+                  href="/services"
                   className="block py-1 md:py-0 hover:text-blue-500"
                 >
-                  Pricing
+                  Our Services
                 </Link>
               </li>
               <li>
@@ -93,11 +93,7 @@ const Navbar = () => {
                             <SheetClose>Services</SheetClose>
                           </Link>
                         </li>
-                        <li>
-                          <Link href="/pricing" className=" block py-2 md:py-0">
-                            <SheetClose>Pricing</SheetClose>
-                          </Link>
-                        </li>
+
                         <li>
                           <Link
                             href="/partners"

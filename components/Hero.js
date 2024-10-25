@@ -16,10 +16,10 @@ const Hero = () => {
         </h1>
         <p className="mt-4 text-lg text-gray-500 dark:text-gray-300 mb-9 max-w-[650px]">
           Starting your journey to Germany can feel daunting. At{" "}
-          <b>The German Guy </b>, we're here to make it easier for both students
-          and professionals. From crafting resumes to navigating university and
-          job applications, our dedicated team supports you every step of the
-          way, ensuring a smooth and successful transition.
+          <b>TGG (The German Guy)</b>, we're here to make it easier for both
+          students and professionals. From crafting resumes to navigating
+          university and job applications, our dedicated team supports you every
+          step of the way, ensuring a smooth and successful transition.
         </p>
         <div className="btn_wrapper flex flex-wrap gap-10 justify-center">
           <Button
