@@ -12,48 +12,48 @@ import Image from "next/image";
 
 const studentTestimonials = [
   {
-    image: "https://via.placeholder.com/150?text=Neeruta",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Neeruta",
     description:
       "Your advice has been invaluable and I am so grateful to have you as a mentor.Your support has been an important part of my journey and I want to express my deepest gratitude for your mentorship.",
   },
   {
-    image: "https://via.placeholder.com/150?text=Prasesh",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Prasesh",
     description:
       "Thank you Dai, for your quick and active support in helping me secure accommodation in Germany. Your assistance made the process much easier. I really appreciate it.",
   },
   {
-    image: "https://via.placeholder.com/150?text=Kushal+K",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Kushal Kandel",
     description:
       "Very kind person who assists you in every way possible without any hindrance. Highly recommended!",
   },
   {
-    image: "https://via.placeholder.com/150?text=Aayushma+G",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Aayushma Giri",
     description:
       "Thank you for your  help and support without any hesitation, during the processing periods. Your help and suggestions means alot for me. ",
   },
   {
-    image: "https://via.placeholder.com/150?text=Pukar+S",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Pukar Tha Shrestha",
     description: "I am getting constant valuable replies and suggestions ",
   },
   {
-    image: "https://via.placeholder.com/150?text=Sanjeev+T",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Sanjeev Kumar Thakur",
     description:
       "The German Guy helped throughout my germany visa process. I got quick responses anytime i messaged. ",
   },
   {
-    image: "https://via.placeholder.com/150?text=Maya+O",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Maya ojha",
     description:
       "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
   },
   {
-    image: "https://via.placeholder.com/150?text=Swarup+K",
+    image: "https://i.pravatar.cc/150?img=3",
     name: "Swarup Koirala",
     description:
       "I have done all the processes for my masters degree programme till I get the visa by consulting TGG. He is very helpful guy and give replies to you on time. ",

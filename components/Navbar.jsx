@@ -20,29 +20,40 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-background/50 sticky top-0  p-1 backdrop-blur border-b z-10">
+    <nav className="bg-background/50 sticky top-0 p-1 backdrop-blur border-b z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-2xl">
           <Link href="/">The German Guy</Link>
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="nav_links_wrapper flex gap-5 items-center ">
+          <div className="nav_links_wrapper flex gap-5 items-center">
             <ul className="md:flex md:items-center md:space-x-6 hidden md:block p-4">
-              {/* <li
-                className="block py-2 md:py-0 hover:text-blue-500 cursor-pointer"
-                onClick={() => scrollToSectionUtil("pricing", 50)}
-              >
-                Pricing
-              </li> */}
-
-              <li>
+              <li className="relative group">
                 <Link
                   href="/services"
                   className="block py-1 md:py-0 hover:text-blue-500"
                 >
                   Our Services
                 </Link>
+                <ul className="absolute left-[-10px] top-full hidden group-hover:block border border-gray-300 dark:border-gray-600 rounded-md shadow-lg z-10 dark:bg-slate-600 bg-white">
+                  <li>
+                    <Link
+                      href="/services/"
+                      className="block py-2 px-4 cursor-pointer hover:text-blue-500"
+                    >
+                      Consuling
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/#cost-estimation"
+                      className="block py-2 px-4 cursor-pointer hover:text-blue-500"
+                    >
+                      Cost Estimation
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link
@@ -52,19 +63,39 @@ const Navbar = () => {
                   Our Partners
                 </Link>
               </li>
-              {/* <li
-                onClick={() => scrollToSectionUtil("about", 50)}
-                className="block py-2 md:py-0 hover:text-blue-500 cursor-pointer"
-              >
-                About
-              </li> */}
               <li>
+                <Link
+                  href="/grade-conversion"
+                  className="block py-2 md:py-0 hover:text-blue-500"
+                >
+                  Grade Conversion
+                </Link>
+              </li>
+              <li className="relative group">
                 <Link
                   href="/#about"
                   className="block py-1 md:py-0 hover:text-blue-500"
                 >
                   About
                 </Link>
+                <ul className="absolute left-[-35px] top-full hidden group-hover:block border border-gray-300 dark:border-gray-600 rounded-md shadow-lg z-10 dark:bg-slate-600 bg-white">
+                  <li>
+                    <Link
+                      href="/impressum"
+                      className="block py-2 px-4 cursor-pointer hover:text-blue-500"
+                    >
+                      Impressum
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link
+                      href="/services/#"
+                      className="block py-2 px-4 cursor-pointer hover:text-blue-500"
+                    >
+                      Teams
+                    </Link>
+                  </li> */}
+                </ul>
               </li>
             </ul>
             <div className="hidden lg:flex">
@@ -88,22 +119,29 @@ const Navbar = () => {
                         <li>
                           <Link
                             href="/services"
-                            className=" block py-2 md:py-0"
+                            className="block py-2 md:py-0"
                           >
                             <SheetClose>Services</SheetClose>
                           </Link>
                         </li>
-
                         <li>
                           <Link
                             href="/partners"
-                            className=" block py-2 md:py-0"
+                            className="block py-2 md:py-0"
                           >
                             <SheetClose>Our Partners</SheetClose>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/#about" className=" block py-2 md:py-0">
+                          <Link
+                            href="/grade-conversion"
+                            className="block py-2 md:py-0"
+                          >
+                            <SheetClose>Grade Conversion</SheetClose>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/#about" className="block py-2 md:py-0">
                             <SheetClose>About</SheetClose>
                           </Link>
                         </li>

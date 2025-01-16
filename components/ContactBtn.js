@@ -5,7 +5,7 @@ const ContactBtn = () => {
     <Link
       href="/#talk-to-team"
       className="font-bold lg:block mr-4 bg-primary text-secondary
-              px-3 py-2 rounded-lg
+              px-3 py-2 rounded-lg hover:bg-primary/90
               "
     >
       CONTACT US
