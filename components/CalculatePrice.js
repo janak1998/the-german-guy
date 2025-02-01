@@ -66,6 +66,18 @@ const CalculatePrice = () => {
         Monthly: 7500,
       },
     },
+    specialityCook: {
+      name: "Speciality Cook",
+      subOptions: {
+        Monthly: "As per the requirement, it will be disscussed",
+      },
+    },
+    familyReunion: {
+      name: "Family Reunion",
+      subOptions: {
+        Monthly: "As per the requirement, it will be disscussed",
+      },
+    },
   };
 
   const getPrice = () => {
@@ -136,6 +148,7 @@ const CalculatePrice = () => {
 
       {/* Display the calculated price */}
       <div className="text-xl font-semibold mt-6 text-center">
+        
         Total Price: Rs {getPrice()}
       </div>
     </div>

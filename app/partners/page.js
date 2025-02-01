@@ -65,7 +65,7 @@ const Page = () => {
     "German Banks": [
       {
         name: "N26",
-        url: "https://n26.com/r/awanishs0376",
+        url: "http://n26-eu.c2nwa3.net/7abxGd",
         btn_label: "Start Banking",
       },
       {
