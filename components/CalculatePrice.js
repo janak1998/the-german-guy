@@ -136,11 +136,7 @@ const CalculatePrice = () => {
                 subOption === optionKey ? "font-semibold text-blue-600" : ""
               }`}
             >
-              {`${optionKey.charAt(0).toUpperCase() + optionKey.slice(1)} - ${
-                typeof services[activeTab].subOptions[optionKey] === "number"
-                  ? `Rs ${services[activeTab].subOptions[optionKey]}`
-                  : services[activeTab].subOptions[optionKey]
-              }`}
+              {`${optionKey.charAt(0).toUpperCase() + optionKey.slice(1)} `}
             </span>
           </label>
         ))}
@@ -148,7 +144,6 @@ const CalculatePrice = () => {
 
       {/* Display the calculated price */}
       <div className="text-xl font-semibold mt-6 text-center">
-        
         Total Price: Rs {getPrice()}
       </div>
     </div>
