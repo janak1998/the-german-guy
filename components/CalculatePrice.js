@@ -69,7 +69,7 @@ const CalculatePrice = () => {
     specialityCook: {
       name: "Speciality Cook",
       subOptions: {
-        Monthly: "As per the requirement, it will be disscussed",
+        Monthly: 150000,
       },
     },
     familyReunion: {
