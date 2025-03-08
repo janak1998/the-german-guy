@@ -114,6 +114,13 @@ const Page = () => {
         btn_label: "Join Now",
       },
     ],
+    "Tax Return": [
+      {
+        name: "Taxfix",
+        url: "https://taxfix.page.link/eijQ",
+        btn_label: "Get Started",
+      },
+    ],
   };
 
   const [activeType, setActiveType] = useState(""); // Track active partner type
@@ -226,11 +233,10 @@ const Page = () => {
                 {Object.keys(partners).map((type) => (
                   <button
                     key={type}
-                    className={`px-4 py-2 rounded ${
-                      activeType === type
-                        ? "bg-blue-600 text-white"
-                        : "bg-gray-200 dark:bg-gray-700 dark:text-gray-300"
-                    }`}
+                    className={`px-4 py-2 rounded ${activeType === type
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-200 dark:bg-gray-700 dark:text-gray-300"
+                      }`}
                     onClick={() => handleScrollToSection(type)}
                   >
                     {type}
