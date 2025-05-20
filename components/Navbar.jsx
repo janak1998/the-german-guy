@@ -20,7 +20,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-background/50 sticky top-0 p-1 backdrop-blur border-b z-10">
+    <nav className="bg-background/50 sticky top-0 p-1 backdrop-blur border-b z-20">
       <div className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-2xl">
           <Link href="/">The German Guy</Link>
