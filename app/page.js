@@ -27,7 +27,7 @@ export default function Home() {
 
       <Pricing />
 
-      <CarouselSection />
+      {/* <CarouselSection /> */}
 
       <About />
     </main>

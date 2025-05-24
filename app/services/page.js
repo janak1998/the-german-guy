@@ -123,7 +123,7 @@ const Page = () => {
         <RingBtn />
       </div>
 
-      <CarouselSection />
+      {/* <CarouselSection /> */}
     </main>
   );
 };
