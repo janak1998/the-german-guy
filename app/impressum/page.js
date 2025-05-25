@@ -7,7 +7,7 @@ const page = () => {
           <h1 className="text-4xl font-semibold mb-8 text-center">Impressum</h1>
           <p>The German Guy</p>
           <p>Mühlenweg 34a</p>
-          <p>5232 Frankfurt(Oder), Germany</p>
+          <p>15232 Frankfurt(Oder), Germany</p>
           <p>Email: <a href="mailto:contact@thegermanguy.org" className="underline">contact@thegermanguy.org</a></p>
           <p>Name der entgegennehmenden Stelle: Stadt Frankfurt(Oder)</p>
           <p>USt-IdNr. 061/276/01885</p>
