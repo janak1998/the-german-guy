@@ -44,7 +44,7 @@ const Page = () => {
     {
       title: "Voluntary Service Visa",
       description:
-        "The Voluntary Service Visa allows young individuals to engage in meaningful social, ecological, or cultural projects in Germany. Ideal for those seeking to gain practical work experience and immerse themselves in German culture, this visa covers programs like the FSj (Freiwilliges Soziales Jahr) and VFD (Voluntary Federal Service). Participants contribute to community welfare, improve their language skills, and build professional networks, making it a rewarding experience both personally and professionally.",
+        "The Voluntary Service Visa allows young individuals to engage in meaningful social, ecological, or cultural projects in Germany. Ideal for those seeking to gain practical work experience and immerse themselves in German culture, this visa covers programs like the FSJ (Freiwilliges Soziales Jahr) and VFD (Voluntary Federal Service). Participants contribute to community welfare, improve their language skills, and build professional networks, making it a rewarding experience both personally and professionally.",
       icon: "/assets/voluntary_service_icon.svg",
     },
     {

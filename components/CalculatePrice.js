@@ -63,19 +63,19 @@ const CalculatePrice = () => {
     subscription: {
       name: "Personal Guidance Plan",
       subOptions: {
-        Monthly: 7500,
+        Monthly: 7999,
       },
     },
     specialityCook: {
       name: "Speciality Cook",
       subOptions: {
-        Monthly: 150000,
+        "Speciality Cook": 150000,
       },
     },
     familyReunion: {
       name: "Family Reunion",
       subOptions: {
-        Monthly: "As per the requirement, it will be disscussed",
+        "Family Reunion": "As per the requirement, it will be disscussed",
       },
     },
   };
@@ -101,11 +101,10 @@ const CalculatePrice = () => {
         {Object.keys(services).map((key) => (
           <button
             key={key}
-            className={`px-6 py-2 rounded-lg font-semibold transition duration-300 ease-in-out ${
-              activeTab === key
+            className={`px-6 py-2 rounded-lg font-semibold transition duration-300 ease-in-out ${activeTab === key
                 ? "bg-blue-500 text-white shadow-lg"
                 : "bg-gray-200 text-gray-600 hover:bg-gray-300"
-            }`}
+              }`}
             onClick={() => {
               setActiveTab(key);
               setSubOption(""); // Reset sub option when changing tab
@@ -132,9 +131,8 @@ const CalculatePrice = () => {
               className="mr-2 accent-blue-500 transition-colors duration-200 ease-in-out "
             />
             <span
-              className={`${
-                subOption === optionKey ? "font-semibold text-blue-600" : ""
-              }`}
+              className={`${subOption === optionKey ? "font-semibold text-blue-600" : ""
+                }`}
             >
               {`${optionKey.charAt(0).toUpperCase() + optionKey.slice(1)} `}
             </span>
