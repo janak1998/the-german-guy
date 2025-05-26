@@ -11,6 +11,25 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "The German Guy",
   description: "You Decide, We Support",
+   openGraph: {
+    title: "The German Guy",
+    description: "You Decide, We Support",
+    url: "https://www.thegermanguy.org/",
+    images: [
+      {
+        url: "https://www.thegermanguy.org/assets/TGGLogo.png",
+        width: 1200,
+        height: 630,
+        alt: "The German Guy Logo"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The German Guy",
+    description: "You Decide, We Support",
+    images: ["https://www.thegermanguy.org/assets/TGGLogo.png"]
+  }
 };
 
 export default function RootLayout({ children }) {
