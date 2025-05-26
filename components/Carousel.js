@@ -59,7 +59,7 @@ const studentTestimonials = [
       "I have done all the processes for my masters degree programme till I get the visa by consulting TGG. He is very helpful guy and give replies to you on time. ",
   },
   {
-    image: "/reviews/KhagenK.webp",
+    image: "/reviews/KhagenKi.webp",
     name: "Khagen Kirati",
     description:
       "Huge thanks to TGG for providing me mentorship and guidance throughout my journey to Germany. It would be extremely difficult to get things done without the help of TGG. I will be always greatful towards the TGG.",
