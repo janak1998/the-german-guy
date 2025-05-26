@@ -15,6 +15,7 @@ import { ModeToggle } from "./Theme-btn";
 import { useRouter } from "next/navigation";
 import SocialLinks from "./SocialLinks";
 import ContactBtn from "./ContactBtn";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
@@ -23,7 +24,16 @@ const Navbar = () => {
     <nav className="bg-background/50 sticky top-0 p-1 backdrop-blur border-b z-20">
       <div className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-2xl">
-          <Link href="/">The German Guy</Link>
+          {/* <Link href="/">The German Guy</Link> */}
+          <Link href="/">
+            <Image
+              src="/assets/TGGLogo.png"
+              alt="logo"
+              className="rounded-lg h-12"
+              height={150}
+              width={150}
+            />
+          </Link>
         </div>
 
         <div className="flex justify-center items-center">

@@ -12,51 +12,69 @@ import Image from "next/image";
 
 const studentTestimonials = [
   {
-    image: "https://i.pravatar.cc/150?img=3",
+    image: "/reviews/NirutaB.jpeg",
     name: "Neeruta",
     description:
       "Your advice has been invaluable and I am so grateful to have you as a mentor.Your support has been an important part of my journey and I want to express my deepest gratitude for your mentorship.",
   },
   {
-    image: "https://i.pravatar.cc/150?img=3",
+    image: "/reviews/PraseshL.jpeg",
     name: "Prasesh",
     description:
       "Thank you Dai, for your quick and active support in helping me secure accommodation in Germany. Your assistance made the process much easier. I really appreciate it.",
   },
   {
-    image: "https://i.pravatar.cc/150?img=3",
+    image: "/reviews/KushalK.jpeg",
     name: "Kushal Kandel",
     description:
       "Very kind person who assists you in every way possible without any hindrance. Highly recommended!",
   },
   {
-    image: "https://i.pravatar.cc/150?img=3",
+    image: "/reviews/AyushmaanG.webp",
     name: "Aayushma Giri",
     description:
       "Thank you for your  help and support without any hesitation, during the processing periods. Your help and suggestions means alot for me. ",
   },
+  // {
+  //   image: "https://i.pravatar.cc/150?img=3",
+  //   name: "Pukar Tha Shrestha",
+  //   description: "I am getting constant valuable replies and suggestions ",
+  // },
+  // {
+  //   image: "https://i.pravatar.cc/150?img=3",
+  //   name: "Sanjeev Kumar Thakur",
+  //   description:
+  //     "The German Guy helped throughout my germany visa process. I got quick responses anytime i messaged. ",
+  // },
+  // {
+  //   image: "https://i.pravatar.cc/150?img=3",
+  //   name: "Maya ojha",
+  //   description:
+  //     "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
+  // },
   {
-    image: "https://i.pravatar.cc/150?img=3",
-    name: "Pukar Tha Shrestha",
-    description: "I am getting constant valuable replies and suggestions ",
-  },
-  {
-    image: "https://i.pravatar.cc/150?img=3",
-    name: "Sanjeev Kumar Thakur",
-    description:
-      "The German Guy helped throughout my germany visa process. I got quick responses anytime i messaged. ",
-  },
-  {
-    image: "https://i.pravatar.cc/150?img=3",
-    name: "Maya ojha",
-    description:
-      "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
-  },
-  {
-    image: "https://i.pravatar.cc/150?img=3",
+    image: "/reviews/SwarupK.jpeg",
     name: "Swarup Koirala",
     description:
       "I have done all the processes for my masters degree programme till I get the visa by consulting TGG. He is very helpful guy and give replies to you on time. ",
+  },
+  {
+    image: "/reviews/KhagenK.webp",
+    name: "Khagen Kirati",
+    description:
+      "Huge thanks to TGG for providing me mentorship and guidance throughout my journey to Germany. It would be extremely difficult to get things done without the help of TGG. I will be always greatful towards the TGG.",
+  },
+  {
+    image: "/reviews/ShreejanJ.jpg",
+    name: "Shreejan Joshi",
+    description:
+      "I am thrilled to share my journey of securing a student visa for my Master's in International Business Administration in Frankfurt, Germany, thanks to the expert guidance of The German Guy Consultancy. Their personalized support and meticulous approach made the entire application process seamless, turning my dream into a reality. ",
+  },
+  {
+    image: "/reviews/ChiranjibiS.jpg",
+    name: "Chiranjibi Singh",
+    description:
+      "TGG was very helpful all the time. They provided proper guidance whenever I needed one. Like whenever I had any doubt I used to ask to TGG or directly to Awanish dai and they replied ASAP. Lastly I would say that I got all my doubt solved and 95% of them were free of cost. Thanks TGG and specially Awanish dai.",
   },
 ];
 
