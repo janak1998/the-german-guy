@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://www.thegermanguy.org/",
     images: [
       {
-        url: "https://www.thegermanguy.org/assets/TGGLogo.png",
+        url: "https://www.thegermanguy.org/assets/shareImage.png",
         width: 1200,
         height: 630,
         alt: "The German Guy Logo"
@@ -28,7 +28,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "The German Guy",
     description: "You Decide, We Support",
-    images: ["https://www.thegermanguy.org/assets/TGGLogo.png"]
+    images: ["https://www.thegermanguy.org/assets/shareImage.png"]
   }
 };
 
