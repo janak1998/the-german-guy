@@ -15,6 +15,8 @@ export const metadata = {
     title: "The German Guy",
     description: "You Decide, We Support",
     url: "https://www.thegermanguy.org/",
+    type: "website",
+    siteName: "The German Guy",
     images: [
       {
         url: "https://www.thegermanguy.org/assets/shareImage.png",
@@ -29,7 +31,10 @@ export const metadata = {
     title: "The German Guy",
     description: "You Decide, We Support",
     images: ["https://www.thegermanguy.org/assets/shareImage.png"]
-  }
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
