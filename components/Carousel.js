@@ -31,9 +31,9 @@ const studentTestimonials = [
   },
   {
     image: "/reviews/AyushmaanG.webp",
-    name: "Aayushma Giri",
+    name: "Ayushmaan Giri",
     description:
-      "Thank you for your  help and support without any hesitation, during the processing periods. Your help and suggestions means alot for me. ",
+      "Thanks Dai for helping me, I didn't take any Consultancy but with the help of seniors from Nepalese in Germany and peer I got to know many things about Visa procedure and Financial Documents.",
   },
   // {
   //   image: "https://i.pravatar.cc/150?img=3",

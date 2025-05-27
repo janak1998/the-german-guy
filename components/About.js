@@ -38,7 +38,7 @@ const About = () => {
             Germany.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-            TGG offers personalized guidance in admission counseling, visa
+            TGG offers personalized guidance in admission consulting, visa
             assistance, resume writing, interview preparation, and career
             coaching. We also provide information on scholarships, internships,
             Au pair opportunities, Ausbildung programs, and job openings.

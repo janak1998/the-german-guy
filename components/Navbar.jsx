@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* <Link href="/">The German Guy</Link> */}
           <Link href="/">
             <Image
-              src="/assets/TGGLogo.png"
+              src="/assets/TGGLogo1.png"
               alt="logo"
               className="rounded-lg h-12"
               height={150}
@@ -52,7 +52,7 @@ const Navbar = () => {
                       href="/services/"
                       className="block py-2 px-4 cursor-pointer hover:text-blue-500"
                     >
-                      Consuling
+                      Consulting
                     </Link>
                   </li>
                   <li>

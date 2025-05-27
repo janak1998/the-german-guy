@@ -112,7 +112,7 @@ const Page = () => {
         <h3 className="text-lg text-gray-800 dark:text-gray-200 font-bold">
           What Visa You Are Most Likely To Get?
         </h3>
-        <p className="px-20 text-center text-gray-600 dark:text-gray-400">
+        <p className="px-20 text-center text-gray-800 dark:text-gray-200">
           What visa suits your profile best? More importantly, what are your
           chances of obtaining each visa type? Let’s talk and get to know your
           background better. Your grades, academic history, work experience, and

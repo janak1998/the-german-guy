@@ -11,7 +11,7 @@ const page = () => {
       title: "Consulting",
       image: "/assets/women-consulting.png",
       description:
-        "We understand going through application and immigration process can be confusing and fraustrating espically if you are a student and moving overseas for first time. Exactly to solve this, we will help you find right visa type (i.e Student, Working, Au-pair) in Germany or neighbouring countries like Netherlands, Austria, Switzerland. Where to find respective contract, how to make good application, supporting documents, financial documents and everything else in between. Consultancy exists already but they have incentive to misguide you and charge enermous money. It's always free to take our first consuling call so let's start right away",
+        "We understand going through application and immigration process can be confusing and fraustrating espically if you are a student and moving overseas for first time. Exactly to solve this, we will help you find right visa type (i.e Student, Working, Au-pair) in Germany or neighbouring countries like Netherlands, Austria, Switzerland. Where to find respective contract, how to make good application, supporting documents, financial documents and everything else in between. Consultancy exists already but they have incentive to misguide you and charge enermous money. It's always free to take our first consulting call so let's start right away",
       cta: "Book First Call",
     },
     {
