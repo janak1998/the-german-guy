@@ -30,7 +30,7 @@ const FAQs = () => {
         "There is no limitation on visa approval. It can be a bit subjective, but one thing's for sure – if you apply sincerely and express your intentions clearly, read through the contract, show language proficiency, and have a solid plan along with acing the interview, you're likely to secure the visa. It's all about being genuine and well-prepared.",
     },
     {
-      question: "How can we assit you?",
+      question: "How can we assist you?",
       answer:
         "Our purpose is to assist you in finding the perfect university or job. Throughout the entire process, we lend a hand with documentation and legal procedures. We will guide you in crafting your CV and application letter to handling your documents and travel arrangements. Our goal is to make your journey as smooth as possible. Just know, we're here to help with anything you may need.",
     },
