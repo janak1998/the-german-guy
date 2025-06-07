@@ -1,3 +1,4 @@
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -7,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const studentTestimonials = [
@@ -35,23 +36,6 @@ const studentTestimonials = [
     description:
       "Thanks Dai for helping me, I didn't take any Consultancy but with the help of seniors from Nepalese in Germany and peer I got to know many things about Visa procedure and Financial Documents.",
   },
-  // {
-  //   image: "https://i.pravatar.cc/150?img=3",
-  //   name: "Pukar Tha Shrestha",
-  //   description: "I am getting constant valuable replies and suggestions ",
-  // },
-  // {
-  //   image: "https://i.pravatar.cc/150?img=3",
-  //   name: "Sanjeev Kumar Thakur",
-  //   description:
-  //     "The German Guy helped throughout my germany visa process. I got quick responses anytime i messaged. ",
-  // },
-  // {
-  //   image: "https://i.pravatar.cc/150?img=3",
-  //   name: "Maya ojha",
-  //   description:
-  //     "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
-  // },
   {
     image: "/reviews/SwarupK.jpeg",
     name: "Swarup Koirala",
@@ -76,9 +60,72 @@ const studentTestimonials = [
     description:
       "TGG was very helpful all the time. They provided proper guidance whenever I needed one. Like whenever I had any doubt I used to ask to TGG or directly to Awanish dai and they replied ASAP. Lastly I would say that I got all my doubt solved and 95% of them were free of cost. Thanks TGG and specially Awanish dai.",
   },
+  {
+    image: "/reviews/PritamM.webp",
+    name: "Pritam Maharjan",
+    description:
+      "TGG played a vital role in my student visa processing. Their guidance, expertise, and constant support made the whole journey smooth and stress free. I truly believe I got my visa because of them. They are simply great at what they do!",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Aayushma Giri",
+    description: "Thank you for your  help and support without any hesitation, during the processing periods. Your help and suggestions means alot for me. ",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Pukar Tha Shrestha",
+    description: "I am getting constant valuable replies and suggestions from TGG. I am really thankful to them for their support and guidance.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Sanjeev Kumar Thakur",
+    description:
+      "The German Guy helped throughout my germany visa process. I got quick responses anytime I had a query. I am really thankful to TGG for their support and guidance.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Maya ojha",
+    description:
+      "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Jenisha",
+    description:
+      "He was very helpful during the process of application. He guided me and cleared any doubts that arised during the process. I am very thankful to him for his help and support.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Kala karki",
+    description:
+      "It was quite good experience and all the members are helpful.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Yoshan Kharel",
+    description:
+      "I wanted to take a moment to sincerely thank The german guy and the team for your invaluable help with my visa processing. Your guidance, prompt responses, and willingness to assist made a significant difference in making the process smoother and less stressful. I truly appreciate your time and effort, especially in navigating the requirements and ensuring everything was in order. Your support reflects a high level of professionalism and kindness, for which I am very grateful.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Karki",
+    description:
+      "I was struggling to book visa interview for Germany at that time I didn’t know anyone to whom I can get guidance. My sister told me about TGG and with the help of TGG I got my visa. They are literally guiding students  and shaping the way of that any other consultancy couldn’t do.",
+  },
 ];
 
+const MAX_LENGTH = 200;
+
 const CarouselSection = () => {
+  const [expanded, setExpanded] = useState({});
+
+  const handleToggle = (index) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
   return (
     <section className="container px-4 py-10 mx-auto">
       <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-800 dark:text-white text-center">
@@ -91,32 +138,48 @@ const CarouselSection = () => {
         className="w-[80%] lg:w-full lg:max-w-[1200px] mx-auto"
       >
         <CarouselContent className="-ml-2 md:-ml-4">
-          {studentTestimonials.map((person, index) => (
-            <CarouselItem
-              key={index}
-              className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4"
-            >
-              <div className="p-1">
-                <Card className="flex flex-col min-h-[400px] justify-between">
-                  <CardHeader className="flex justify-center items-center">
-                    <Image
-                      src={person.image}
-                      alt={person.name}
-                      className="rounded-full"
-                      height={150}
-                      width={150}
-                    />
-                  </CardHeader>
-                  <CardTitle className="text-center">{person.name}</CardTitle>
-                  <CardContent className="flex-grow flex items-center justify-center p-6">
-                    <span className="text-md font-semibold">
-                      {person.description}
-                    </span>
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
+          {studentTestimonials.map((person, index) => {
+            const isLong = person.description.length > MAX_LENGTH;
+            const isExpanded = expanded[index];
+            const displayText = isExpanded
+              ? person.description
+              : person.description.slice(0, MAX_LENGTH) + (isLong ? "..." : "");
+
+            return (
+              <CarouselItem
+                key={index}
+                className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4"
+              >
+                <div className="p-1">
+                  <Card className="flex flex-col min-h-[400px] justify-between">
+                    <CardHeader className="flex justify-center items-center">
+                      <Image
+                        src={person.image}
+                        alt={person.name}
+                        className="rounded-full"
+                        height={150}
+                        width={150}
+                      />
+                    </CardHeader>
+                    <CardTitle className="text-center">{person.name}</CardTitle>
+                    <CardContent className="flex-grow flex flex-col items-center justify-center p-6">
+                      <span className="text-md font-semibold text-center">
+                        {displayText}
+                        {isLong && (
+                          <button
+                            className="ml-2 text-blue-600 underline text-sm font-normal"
+                            onClick={() => handleToggle(index)}
+                          >
+                            {isExpanded ? "Show less" : "Read more"}
+                          </button>
+                        )}
+                      </span>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            );
+          })}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
