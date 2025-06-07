@@ -17,22 +17,22 @@ const FAQs = () => {
     {
       question: "How much money does it take in total?",
       answer:
-        "For students, here's a breakdown to help you plan: • Blocked Account: ~ 11,904 € • Processing expenses (including visa fee, uni admission fee, insurance): ~ 1,000 € • Travel: ~ 600 € • First-month expenses: ~ 1,500 €(rent, deposit, etc) • Other: ~ 1,000 € Keep in mind, these numbers might change based on your situation, university and the city you're headed to. Exact figure depends on your contract and the type of visa you are applying for.",
+        "For students, here's a breakdown to help you plan: • Blocked Account: ~ 11,904 € • Processing expenses (including visa fee, university admission fee, insurance): ~ 1,000 € • Travel: ~ 600 € • First-month expenses: ~ 1,500 €(rent, deposit, etc) • Other: ~ 1,000 € Keep in mind, these numbers might change based on your situation, university and the city you're headed to. The exact figure depends on your contract and the type of visa you are applying for.",
     },
     {
       question: "Is German language required?",
       answer:
-        "In most cases, yes, but there are exceptions where it's not necessary. For instance, if you're coming for a English taught program, or a job that have only English requirements, or your au-pair speaks a language other than German, or your contract provider agrees to bring you without the language requirement and many more scenarios. It really depends on your unique situation, contract, and the type of visa you are applying for. Nevertheless knowing German can be super helpful in your everyday life and when you're looking for a job. It adds an extra layer of ease and opens up more opportunities for you. If you like to learn German, feel free to join TGG German langugae WhatsApp Group( https://chat.whatsapp.com/Eo05CiAwzLsDtfMeQvyJjU )",
+        "In most cases, yes, but there are exceptions where it's not necessary. For instance, if you're coming for an English-taught program, or a job that has only English requirements, or your au pair speaks a language other than German, or your contract provider agrees to bring you without the language requirement and many other scenarios. It really depends on your unique situation, contract, and the type of visa you are applying for. Nevertheless, knowing German can be super helpful in your everyday life and when you're looking for a job. It adds an extra layer of ease and opens up more opportunities for you. If you would like to learn German, feel free to join the TGG German language WhatsApp Group ( https://chat.whatsapp.com/Eo05CiAwzLsDtfMeQvyJjU )",
     },
     {
       question: "What is the situation of Au Pair / Ausbildung visa rate?",
       answer:
-        "There is no limitation on visa approval. It can be a bit subjective, but one thing's for sure – if you apply sincerely and express your intentions clearly, read through the contract, show language proficiency, and have a solid plan along with acing the interview, you're likely to secure the visa. It's all about being genuine and well-prepared.",
+        "There is no limitation on visa approvals. It can be a bit subjective, but one thing's for sure – if you apply sincerely and express your intentions clearly, read through the contract, show language proficiency, and have a solid plan along with acing the interview, you're likely to secure the visa. It's all about being genuine and well-prepared.",
     },
     {
       question: "How can we assist you?",
       answer:
-        "Our purpose is to assist you in finding the perfect university or job. Throughout the entire process, we lend a hand with documentation and legal procedures. We will guide you in crafting your CV and application letter to handling your documents and travel arrangements. Our goal is to make your journey as smooth as possible. Just know, we're here to help with anything you may need.",
+        "Our purpose is to assist you in finding the perfect university or job. Throughout the entire process, we lend a hand with documentation and legal procedures. We will guide you in crafting your CV and application letter, and handle your documents and travel arrangements. Our goal is to make your journey as smooth as possible. Just know, we're here to help with anything you may need.",
     },
   ];
 

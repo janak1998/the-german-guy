@@ -16,7 +16,7 @@ const studentTestimonials = [
     image: "/reviews/NirutaB.jpeg",
     name: "Neeruta",
     description:
-      "Your advice has been invaluable and I am so grateful to have you as a mentor.Your support has been an important part of my journey and I want to express my deepest gratitude for your mentorship.",
+      "Your advice has been invaluable and I am so grateful to have you as a mentor. Your support has been an important part of my journey and I want to express my deepest gratitude for your mentorship.",
   },
   {
     image: "/reviews/PraseshL.jpeg",
@@ -34,19 +34,19 @@ const studentTestimonials = [
     image: "/reviews/AyushmaanG.webp",
     name: "Ayushmaan Giri",
     description:
-      "Thanks Dai for helping me, I didn't take any Consultancy but with the help of seniors from Nepalese in Germany and peer I got to know many things about Visa procedure and Financial Documents.",
+      "Thanks Dai for helping me, I didn't take any consultancy but with the help of seniors from Nepalese in Germany and peers I got to know many things about Visa procedure and Financial Documents.",
   },
   {
     image: "/reviews/SwarupK.jpeg",
     name: "Swarup Koirala",
     description:
-      "I have done all the processes for my masters degree programme till I get the visa by consulting TGG. He is very helpful guy and give replies to you on time. ",
+      "I have done all the processes for my master's degree program until I get the visa by consulting TGG. He is very helpful guy and gives replies to you on time. ",
   },
   {
     image: "/reviews/KhagenKi.webp",
     name: "Khagen Kirati",
     description:
-      "Huge thanks to TGG for providing me mentorship and guidance throughout my journey to Germany. It would be extremely difficult to get things done without the help of TGG. I will be always greatful towards the TGG.",
+      "Huge thanks to TGG for providing me mentorship and guidance throughout my journey to Germany. It would be extremely difficult to get things done without the help of TGG. I will be always grateful towards TGG.",
   },
   {
     image: "/reviews/ShreejanJ.jpg",
@@ -69,7 +69,7 @@ const studentTestimonials = [
   {
     image: "/reviews/placeholder.webp",
     name: "Aayushma Giri",
-    description: "Thank you for your  help and support without any hesitation, during the processing periods. Your help and suggestions means alot for me. ",
+    description: "Thank you for your help and support without any hesitation, during the processing periods. Your help and suggestions means a lot for me. ",
   },
   {
     image: "/reviews/placeholder.webp",
@@ -80,25 +80,25 @@ const studentTestimonials = [
     image: "/reviews/placeholder.webp",
     name: "Sanjeev Kumar Thakur",
     description:
-      "The German Guy helped throughout my germany visa process. I got quick responses anytime I had a query. I am really thankful to TGG for their support and guidance.",
+      "The German Guy helped throughout my Germany visa process. I got quick responses anytime I had a query. I am really thankful to TGG for their support and guidance.",
   },
   {
     image: "/reviews/placeholder.webp",
     name: "Maya ojha",
     description:
-      "Awanish provided me guidance with some stuffs I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
+      "Awanish provided me guidance with some stuff I had with my insurance. With his assistance and my professor's help, I got through it. I am really glad that it worked out and thanks Awanish for taking your time helping out random stranger like me.",
   },
   {
     image: "/reviews/placeholder.webp",
     name: "Jenisha",
     description:
-      "He was very helpful during the process of application. He guided me and cleared any doubts that arised during the process. I am very thankful to him for his help and support.",
+      "He was very helpful during the process of application. He guided me and cleared any doubts that arose during the process. I am very thankful to him for his help and support.",
   },
   {
     image: "/reviews/placeholder.webp",
     name: "Kala karki",
     description:
-      "It was quite good experience and all the members are helpful.",
+      "It was quite a good experience and all the members are helpful.",
   },
   {
     image: "/reviews/placeholder.webp",
@@ -110,7 +110,7 @@ const studentTestimonials = [
     image: "/reviews/placeholder.webp",
     name: "Karki",
     description:
-      "I was struggling to book visa interview for Germany at that time I didn’t know anyone to whom I can get guidance. My sister told me about TGG and with the help of TGG I got my visa. They are literally guiding students  and shaping the way of that any other consultancy couldn’t do.",
+      "I was struggling to book visa interview for Germany at that time I didn’t know anyone to whom I can get guidance. My sister told me about TGG and with the help of TGG I got my visa. They are literally guiding students and shaping the way of that any other consultancy couldn’t do.",
   },
 ];
 

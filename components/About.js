@@ -32,8 +32,8 @@ const About = () => {
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             Recognizing the challenges faced by international students and
-            professionals such as language barriers, visa complexities, and
-            accommodation hurdles we founded TGG (The German Guy). Our mission
+            professionals, such as language barriers, visa complexities, and
+            accommodation hurdles, we founded TGG (The German Guy). Our mission
             is to ease the transition for those aspiring to study or work in
             Germany.
           </p>
@@ -41,7 +41,7 @@ const About = () => {
             TGG offers personalized guidance in admission consulting, visa
             assistance, resume writing, interview preparation, and career
             coaching. We also provide information on scholarships, internships,
-            Au pair opportunities, Ausbildung programs, and job openings.
+            au pair opportunities, Ausbildung programs, and job openings.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             We are dedicated to empowering individuals to achieve their dreams
