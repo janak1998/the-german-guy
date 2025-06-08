@@ -82,9 +82,12 @@ const Pricing = () => {
               </li>
             </ul>
 
-            <Button className="flex items-center mt-auto text-white bg-blue-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded">
+            <Link
+              href="https://calendly.com/thegermanguys"
+              className="items-center text-center inline-block mt-auto text-white bg-blue-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded"
+            >
               Book Your Free Session
-            </Button>
+            </Link>
           </div>
         </div>
         <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -188,9 +191,12 @@ const Pricing = () => {
                 Additional support sessions
               </li>
             </ul>
-            <button className="flex items-center justify-center mt-auto text-white bg-[#6C63FF] border-0 py-2 px-4 w-full focus:outline-none hover:bg-[#5A52D1] rounded">
+            <Link
+              href="https://calendly.com/thegermanguys"
+              className="flex items-center justify-center mt-auto text-white bg-[#6C63FF] border-0 py-2 px-4 w-full focus:outline-none hover:bg-[#5A52D1] rounded"
+            >
               Choose Best Value Plan
-            </button>
+            </Link>
           </div>
         </div>
         <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -257,9 +263,12 @@ const Pricing = () => {
                 Session for post-application follow-up
               </li>
             </ul>
-            <button className="flex items-center justify-center mt-auto text-white bg-gray-400 dark:bg-gray-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 dark:hover:bg-gray-600 rounded">
+            <Link
+              href="https://calendly.com/thegermanguys"
+              className="flex items-center justify-center mt-auto text-white bg-gray-400 dark:bg-gray-700 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 dark:hover:bg-gray-600 rounded"
+            >
               Choose Visa Only Plan
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -267,7 +276,7 @@ const Pricing = () => {
         <RingBtn
           className="w-max-[500px] lg:w-fit mx-auto"
           btnText={"Explore Our Services"}
-          url={"/pricing"}
+          url={"/services/"}
           target={"_self"}
         />
       </div>
