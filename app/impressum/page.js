@@ -10,6 +10,7 @@ const page = () => {
           <p>15232 Frankfurt(Oder), Germany</p>
           <p>Email: <a href="mailto:contact@thegermanguy.org" className="underline">contact@thegermanguy.org</a></p>
           <p>Name der entgegennehmenden Stelle: Stadt Frankfurt(Oder)</p>
+          <p>Wirtschafts-Identifikationsnummer nach §139c der Abgabenordnung (AO): DE415329353</p>
           <p>USt-IdNr. 061/276/01885</p>
           <p>Representative: Awanish Srivastava</p>
           </div>
