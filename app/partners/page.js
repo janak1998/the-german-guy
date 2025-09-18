@@ -7,12 +7,12 @@ const Page = () => {
   const partners = {
     Insurance: [
       {
-        name: "Public Health Insurance",
+        name: "Public Health Insurance:BARMER",
         url: "https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
       {
-        name: "Private Health Insurance",
+        name: "Private Health Insurance:MAWISTA",
         url: "https://feather-insurance.com/private-health-insurance?utm_source=hoc9lz2rfjmgtdp5",
         btn_label: "Explore Plans",
       },
@@ -97,7 +97,12 @@ const Page = () => {
       {
         name: "Expatrio",
         url: "https://www.expatrio.com?p=TGG23",
-        btn_label: "Get Started",
+        btn_label: "Open Blocked Account",
+      },
+      {
+        name: "Fintiba",
+        url: "partner.fintiba.com/tggthegermanguy",
+        btn_label: "Open Blocked Account",
       },
     ],
     "Money Transfer": [
