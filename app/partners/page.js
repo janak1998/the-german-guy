@@ -101,7 +101,7 @@ const Page = () => {
       },
       {
         name: "Fintiba",
-        url: "partner.fintiba.com/tggthegermanguy",
+        url: "http://partner.fintiba.com/tggthegermanguy",
         btn_label: "Open Blocked Account",
       },
     ],
