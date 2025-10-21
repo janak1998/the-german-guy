@@ -112,6 +112,24 @@ const studentTestimonials = [
     description:
       "I was struggling to book visa interview for Germany at that time I didn’t know anyone to whom I can get guidance. My sister told me about TGG and with the help of TGG I got my visa. They are literally guiding students and shaping the way of that any other consultancy couldn’t do.",
   },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Aakriti Bagdas",
+    description:
+      "TGG has played a vital role in my journey toward studying in Germany. He is a Nepali person who helps students in a simple, clear, and polite way especially those who dream of going abroad for their education. His way of explaining everything, from the visa process to choosing the right Ausbildung or university, makes things much easier and less stressful.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Tilotama Shrestha",
+    description:
+      "I am glad that I found you as my visa guidance. I am positive throughout this journey only because of your guidance so sure I recommend you to my colleagues as well to those who need help. Thanks to you dai.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Jalma",
+    description:
+      "Got azu visa easily assisted by Awanish.",
+  },
 ];
 
 const MAX_LENGTH = 200;
