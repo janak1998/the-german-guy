@@ -17,6 +17,8 @@ export default function Home() {
     <main className="lg:gap-20 flex flex-col">
       <Hero />
 
+      <CarouselSection />
+
       <Promotion />
 
       <Services />
@@ -26,8 +28,6 @@ export default function Home() {
       <FAQs />
 
       <Pricing />
-
-      <CarouselSection />
 
       <About />
     </main>
