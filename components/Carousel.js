@@ -168,7 +168,7 @@ const CarouselSection = () => {
       } else {
         api.scrollTo(0);
       }
-    }, 2500);
+    }, 3500);
 
     return () => clearInterval(interval);
   }, [api]);
