@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const studentTestimonials = [
@@ -69,12 +69,14 @@ const studentTestimonials = [
   {
     image: "/reviews/placeholder.webp",
     name: "Aayushma Giri",
-    description: "Thank you for your help and support without any hesitation, during the processing periods. Your help and suggestions means a lot for me. ",
+    description:
+      "Thank you for your help and support without any hesitation, during the processing periods. Your help and suggestions means a lot for me. ",
   },
   {
     image: "/reviews/placeholder.webp",
     name: "Pukar Tha Shrestha",
-    description: "I am getting constant valuable replies and suggestions from TGG. I am really thankful to them for their support and guidance.",
+    description:
+      "I am getting constant valuable replies and suggestions from TGG. I am really thankful to them for their support and guidance.",
   },
   {
     image: "/reviews/placeholder.webp",
@@ -93,12 +95,6 @@ const studentTestimonials = [
     name: "Jenisha",
     description:
       "He was very helpful during the process of application. He guided me and cleared any doubts that arose during the process. I am very thankful to him for his help and support.",
-  },
-  {
-    image: "/reviews/placeholder.webp",
-    name: "Kala karki",
-    description:
-      "It was quite a good experience and all the members are helpful.",
   },
   {
     image: "/reviews/placeholder.webp",
@@ -126,9 +122,26 @@ const studentTestimonials = [
   },
   {
     image: "/reviews/placeholder.webp",
-    name: "Jalma",
+    name: "Bhattarai Ankit",
     description:
-      "Got azu visa easily assisted by Awanish.",
+      "One-to-one support I got from TGG was really helpful for me. Initially, I was totally blank about where and how to begin, the mentorship and guidance provided by the team helped to find the better ways in terms of documentation, and processing. I, therefore undoubtedly give all credits to them for my visa issuance, and also recommend others who are willing to continue their higher studies in Germany.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Surakshya Regmi",
+    description:
+      "TGG made my journey from university application to visa approval smooth and stress free ❤️. A genuinely helpful person. May many more students benefit from his assistance 🍀",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Jalma",
+    description: "Got azu visa easily assisted by Awanish.",
+  },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Kala karki",
+    description:
+      "It was quite a good experience and all the members are helpful.",
   },
 ];
 
@@ -136,6 +149,7 @@ const MAX_LENGTH = 200;
 
 const CarouselSection = () => {
   const [expanded, setExpanded] = useState({});
+  const [api, setApi] = useState(null);
 
   const handleToggle = (index) => {
     setExpanded((prev) => ({
@@ -144,16 +158,34 @@ const CarouselSection = () => {
     }));
   };
 
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      const canScrollNext = api.canScrollNext();
+      if (canScrollNext) {
+        api.scrollNext();
+      } else {
+        api.scrollTo(0);
+      }
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section className="container px-4 py-10 mx-auto">
       <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-800 dark:text-white text-center">
         Success Stories
       </h2>
+
       <Carousel
         opts={{
           align: "start",
+          loop: true,
         }}
         className="w-[80%] lg:w-full lg:max-w-[1200px] mx-auto"
+        setApi={setApi}
       >
         <CarouselContent className="-ml-2 md:-ml-4">
           {studentTestimonials.map((person, index) => {
@@ -199,6 +231,7 @@ const CarouselSection = () => {
             );
           })}
         </CarouselContent>
+
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
