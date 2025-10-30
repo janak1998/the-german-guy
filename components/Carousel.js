@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const studentTestimonials = [
@@ -150,6 +150,8 @@ const MAX_LENGTH = 200;
 const CarouselSection = () => {
   const [expanded, setExpanded] = useState({});
   const [api, setApi] = useState(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const intervalRef = useRef(null);
 
   const handleToggle = (index) => {
     setExpanded((prev) => ({
@@ -158,20 +160,38 @@ const CarouselSection = () => {
     }));
   };
 
+  // ---- Auto Slide Logic ----
   useEffect(() => {
     if (!api) return;
 
-    const interval = setInterval(() => {
-      const canScrollNext = api.canScrollNext();
-      if (canScrollNext) {
-        api.scrollNext();
-      } else {
-        api.scrollTo(0);
-      }
-    }, 3500);
+    const startAutoSlide = () => {
+      intervalRef.current = setInterval(() => {
+        if (!api || isPaused) return;
+        const canScrollNext = api.canScrollNext();
+        if (canScrollNext) {
+          api.scrollNext();
+        } else {
+          api.scrollTo(0);
+        }
+      }, 3000);
+    };
 
-    return () => clearInterval(interval);
-  }, [api]);
+    startAutoSlide();
+    return () => clearInterval(intervalRef.current);
+  }, [api, isPaused]);
+
+  // ---- Pause Handlers ----
+  const handleMouseEnter = () => setIsPaused(true);
+  const handleMouseLeave = () => setIsPaused(false);
+
+  const handleButtonClick = (direction) => {
+    setIsPaused(true);
+    if (direction === "next") api?.scrollNext();
+    else api?.scrollPrev();
+
+    // Resume auto-slide after short delay (2s)
+    setTimeout(() => setIsPaused(false), 2000);
+  };
 
   return (
     <section className="container px-4 py-10 mx-auto">
@@ -179,62 +199,71 @@ const CarouselSection = () => {
         Success Stories
       </h2>
 
-      <Carousel
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        className="w-[80%] lg:w-full lg:max-w-[1200px] mx-auto"
-        setApi={setApi}
+      <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className="relative w-[80%] lg:w-full lg:max-w-[1200px] mx-auto"
       >
-        <CarouselContent className="-ml-2 md:-ml-4">
-          {studentTestimonials.map((person, index) => {
-            const isLong = person.description.length > MAX_LENGTH;
-            const isExpanded = expanded[index];
-            const displayText = isExpanded
-              ? person.description
-              : person.description.slice(0, MAX_LENGTH) + (isLong ? "..." : "");
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+          setApi={setApi}
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {studentTestimonials.map((person, index) => {
+              const isLong = person.description.length > MAX_LENGTH;
+              const isExpanded = expanded[index];
+              const displayText = isExpanded
+                ? person.description
+                : person.description.slice(0, MAX_LENGTH) +
+                  (isLong ? "..." : "");
 
-            return (
-              <CarouselItem
-                key={index}
-                className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4"
-              >
-                <div className="p-1">
-                  <Card className="flex flex-col min-h-[400px] justify-between">
-                    <CardHeader className="flex justify-center items-center">
-                      <Image
-                        src={person.image}
-                        alt={person.name}
-                        className="rounded-full"
-                        height={150}
-                        width={150}
-                      />
-                    </CardHeader>
-                    <CardTitle className="text-center">{person.name}</CardTitle>
-                    <CardContent className="flex-grow flex flex-col items-center justify-center p-6">
-                      <span className="text-md font-semibold text-center">
-                        {displayText}
-                        {isLong && (
-                          <button
-                            className="ml-2 text-blue-600 underline text-sm font-normal"
-                            onClick={() => handleToggle(index)}
-                          >
-                            {isExpanded ? "Show less" : "Read more"}
-                          </button>
-                        )}
-                      </span>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            );
-          })}
-        </CarouselContent>
+              return (
+                <CarouselItem
+                  key={index}
+                  className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4"
+                >
+                  <div className="p-1">
+                    <Card className="flex flex-col min-h-[400px] justify-between">
+                      <CardHeader className="flex justify-center items-center">
+                        <Image
+                          src={person.image}
+                          alt={person.name}
+                          className="rounded-full"
+                          height={150}
+                          width={150}
+                        />
+                      </CardHeader>
+                      <CardTitle className="text-center">
+                        {person.name}
+                      </CardTitle>
+                      <CardContent className="flex-grow flex flex-col items-center justify-center p-6">
+                        <span className="text-md font-semibold text-center">
+                          {displayText}
+                          {isLong && (
+                            <button
+                              className="ml-2 text-blue-600 underline text-sm font-normal"
+                              onClick={() => handleToggle(index)}
+                            >
+                              {isExpanded ? "Show less" : "Read more"}
+                            </button>
+                          )}
+                        </span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
 
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
+          <CarouselPrevious onClick={() => handleButtonClick("prev")} />
+          <CarouselNext onClick={() => handleButtonClick("next")} />
+        </Carousel>
+      </div>
     </section>
   );
 };
