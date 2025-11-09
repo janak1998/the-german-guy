@@ -147,10 +147,7 @@ const studentTestimonials = [
     image: "/reviews/placeholder.webp",
     name: "Annu Srivastava",
     description:
-      "I had an amazing experience with The German Guy. From the very beginning, they provided free and genuine guidance throughout my entire process. They patiently cleared every single doubt and were always ready to help at any time, no matter how small my query was.
-What I truly appreciated was how responsive and supportive they were, they answered all my questions quickly and made sure I understood everything clearly. When I was really worried about slot booking through the old method because of APS, they guided me calmly and helped me handle the situation without stress.
-At a time when most other consultancies were asking for huge fees just to book a slot, they never charged a penny and instead focused completely on helping me. From preparing all my documents to providing proper direction at every step, their support made the entire journey smooth and worry-free.
-Highly recommend The German Guy to anyone starting their journey, they really care and go above and beyond to help.",
+      "I had an amazing experience with The German Guy. From the very beginning, they provided free and genuine guidance throughout my entire process. They patiently cleared every single doubt and were always ready to help at any time, no matter how small my query was.What I truly appreciated was how responsive and supportive they were, they answered all my questions quickly and made sure I understood everything clearly. When I was really worried about slot booking through the old method because of APS, they guided me calmly and helped me handle the situation without stress.At a time when most other consultancies were asking for huge fees just to book a slot, they never charged a penny and instead focused completely on helping me. From preparing all my documents to providing proper direction at every step, their support made the entire journey smooth and worry-free.Highly recommend The German Guy to anyone starting their journey, they really care and go above and beyond to help.",
   },
 ];
 
