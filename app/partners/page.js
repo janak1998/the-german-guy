@@ -114,9 +114,14 @@ const Page = () => {
     ],
     "Internet/Sim Card": [
       {
+        name: "SIM.DE",
+        url: "https://h.sim.de/12263fbdc468d?kw=a3c6MjI1YTcwYmMtYWMzNC00ZDk4LTkwNGMtYWE4MjU3ZTkwZTQ0",
+        btn_label: "Order Now",
+      },
+      {
         name: "1&1",
         url: "https://www.1und1.de/?ps_id=P786342813",
-        btn_label: "Join Now",
+        btn_label: "Order Now",
       },
     ],
     "Tax Return": [
