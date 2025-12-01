@@ -149,6 +149,12 @@ const studentTestimonials = [
     description:
       "I had an amazing experience with The German Guy. From the very beginning, they provided free and genuine guidance throughout my entire process. They patiently cleared every single doubt and were always ready to help at any time, no matter how small my query was.What I truly appreciated was how responsive and supportive they were, they answered all my questions quickly and made sure I understood everything clearly. When I was really worried about slot booking through the old method because of APS, they guided me calmly and helped me handle the situation without stress.At a time when most other consultancies were asking for huge fees just to book a slot, they never charged a penny and instead focused completely on helping me. From preparing all my documents to providing proper direction at every step, their support made the entire journey smooth and worry-free.Highly recommend The German Guy to anyone starting their journey, they really care and go above and beyond to help.",
   },
+  {
+    image: "/reviews/placeholder.webp",
+    name: "Resha",
+    description:
+      "TGG guided me through out the visa processing and I was satisfied with your services and guidance. You were always available for simple and even dumb questions😂. The only thing I wished for was more research from your team as well when we didn’t or couldn’t find some infos while preparing for application for Uni. Otherwise, I would definitely recommend TGG.",
+  },
 ];
 
 const MAX_LENGTH = 200;
