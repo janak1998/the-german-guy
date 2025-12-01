@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const socialLinks = [
   {
-    href: "https://www.facebook.com/imawanish5",
+    href: "https://www.facebook.com/tggUG",
     src: "/assets/facebook_icon.svg",
     width: 30,
     height: 30,
