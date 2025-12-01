@@ -143,6 +143,9 @@ const CalculatePrice = () => {
       {/* Display the calculated price */}
       <div className="text-xl font-semibold mt-6 text-center">
         Total Price: Rs {getPrice()}
+        <p>
+          (in €, based on exchange rate)
+          </p>
       </div>
     </div>
   );
