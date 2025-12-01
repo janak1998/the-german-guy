@@ -153,7 +153,7 @@ const studentTestimonials = [
     image: "/reviews/placeholder.webp",
     name: "Resha",
     description:
-      "TGG guided me through out the visa processing and I was satisfied with your services and guidance. You were always available for simple and even dumb questions😂. The only thing I wished for was more research from your team as well when we didn’t or couldn’t find some infos while preparing for application for Uni. Otherwise, I would definitely recommend TGG.",
+      "TGG guided me through out the visa processing and I was satisfied with your services and guidance. You were always available for simple and even dumb questions😂. The only thing I wished for was more research from your team as well when we did not or could not find some infos while preparing for application for Uni. Otherwise, I would definitely recommend TGG.",
   },
 ];
 
