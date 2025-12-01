@@ -36,6 +36,7 @@ const Promotion = () => {
                 Get your BARMER Health Insurance
               </h3>
               <p className="mb-4 text-gray-400 dark:text-gray-300">
+                German Public Health Insurance
               </p>
             </div>
             <Button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors max-w-[200px]">
