@@ -36,15 +36,11 @@ const Promotion = () => {
                 Get your BARMER Health Insurance
               </h3>
               <p className="mb-4 text-gray-400 dark:text-gray-300">
-                German Public Health Insurance {
-                url: "https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5"
-                },
               </p>
             </div>
             <Button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors max-w-[200px]">
-              Apply Now 
-              </Button>
-              url: "https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5"
+              <a href="https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5" target="_blank">Apply Now</a>
+            </Button>
           </div>
         </div>
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center justify-center">
