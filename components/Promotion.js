@@ -33,14 +33,15 @@ const Promotion = () => {
           <div className="flex flex-col h-full justify-between items-center">
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-2 text-gray-100 dark:text-gray-200">
-                10% off on Consultation Services this Month
+                Get your BARMER Health Insurance
               </h3>
               <p className="mb-4 text-gray-400 dark:text-gray-300">
-                Use code CONSULT10 at checkout to get 10% off.
+                German Public Health Insurance
               </p>
             </div>
             <Button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors max-w-[200px]">
-              Claim Offer
+              Apply Now
+              href="https://feather-insurance.com/en/public-health-insurance/barmer?utm_source=hoc9lz2rfjmgtdp5"
             </Button>
           </div>
         </div>
