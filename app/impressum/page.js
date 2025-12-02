@@ -5,14 +5,17 @@ const page = () => {
     <div className="flex justify-center items-center h-[600px] px-4 py-10">
         <div className="flex flex-col mb-10 text-xl text-left text-gray-800 dark:text-gray-200 w-fit gap-5">
           <h1 className="text-4xl font-semibold mb-8 text-center">Impressum</h1>
-          <p>TGG(The German Guy)</p>
+          <p>TGG(The German Guy) UG</p>
           <p>Mühlenweg 34a</p>
-          <p>15232 Frankfurt(Oder), Germany</p>
+          <p>15232 Frankfurt(Oder)</p>
+          <p>Deutschland</p>
           <p>Email: <a href="mailto:contact@thegermanguy.org" className="underline">contact@thegermanguy.org</a></p>
-          <p>Name der entgegennehmenden Stelle: Stadt Frankfurt(Oder)</p>
-          <p>Wirtschafts-Identifikationsnummer nach §139c der Abgabenordnung (AO): DE415329353</p>
+          <p>Fon: +49-15736112217</p>
+          <p>Registergericht: Amtsgericht Frankfurt(Oder)</p>
+          <p>Registernummer: HRB 21884</p>
+          <p>Umsatzsteuer-Identifikationsnummer: DE415329353</p>
           <p>USt-IdNr. 061/276/01885</p>
-          <p>Representative: Awanish Srivastava</p>
+          <p>Geschäftsführer: Awanish Srivastava</p>
           </div>
     </div>
   )
