@@ -12,7 +12,7 @@ const page = () => {
           <p>Email: <a href="mailto:contact@thegermanguy.org" className="underline">contact@thegermanguy.org</a></p>
           <p>Fon: +49-15736112217</p>
           <p>Registergericht: Amtsgericht Frankfurt(Oder)</p>
-          <p>Registernummer: HRB 21884</p>
+          <p>Registernummer: HRB 21884 FF</p>
           <p>Umsatzsteuer-Identifikationsnummer: DE415329353</p>
           <p>USt-IdNr. 061/276/01885</p>
           <p>Geschäftsführer: Awanish Srivastava</p>
