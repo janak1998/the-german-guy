@@ -15,11 +15,7 @@ const page = () => {
           <p>Registernummer: HRB 21884 FF</p>
           <p>Umsatzsteuer-Identifikationsnummer: DE415329353</p>
           <p>Steuernummer: 061/276/01885</p>
-          </div>
-          <div
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors max-w-[200px]">
-          <p>Geschäftsführer: <a href="https://www.linkedin.com/in/imawanish5/" target="_blank">Awanish Srivastava</a></p>
-          </Button>
+          <p>Geschäftsführer: <a url="https://www.linkedin.com/in/imawanish5/" target="_blank">Awanish Srivastava</a></p>
           </div>
     </div>
   )
