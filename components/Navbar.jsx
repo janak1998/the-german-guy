@@ -126,7 +126,7 @@ const Navbar = () => {
                       href="/services/#"
                       className="block py-2 px-4 cursor-pointer hover:text-blue-500"
                     >
-                      Connect us on Social Media
+                      <a>Connect us on Social Media</a>
                     </Link>
                   </li>
                 </ul>
