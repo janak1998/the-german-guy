@@ -105,6 +105,22 @@ const Navbar = () => {
                       Teams
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/services/#"
+                      className="block py-2 px-4 cursor-pointer hover:text-blue-500"
+                    >
+                      Jobs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/#"
+                      className="block py-2 px-4 cursor-pointer hover:text-blue-500"
+                    >
+                      Connect us on Social Media
+                    </Link>
+                  </li>
                 </ul>
               </li>
             </ul>
