@@ -28,8 +28,8 @@ const Footer = () => {
         </div>
         <div className="text-center">
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by The
-            German Guy
+            Copyright © {new Date().getFullYear()} - All right reserved by TGG(The
+            German Guy) UG
           </p>
         </div>
       </div>

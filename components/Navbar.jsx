@@ -97,14 +97,14 @@ const Navbar = () => {
                       Impressum
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link
                       href="/services/#"
                       className="block py-2 px-4 cursor-pointer hover:text-blue-500"
                     >
                       Teams
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </li>
             </ul>

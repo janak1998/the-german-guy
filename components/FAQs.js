@@ -17,7 +17,7 @@ const FAQs = () => {
     {
       question: "How much money does it take in total?",
       answer:
-        "For students, here's a breakdown to help you plan: • Blocked Account: ~ 11,904 € • Processing expenses (including visa fee, university admission fee, insurance): ~ 1,000 € • Travel: ~ 600 € • First-month expenses: ~ 1,500 €(rent, deposit, etc) • Other: ~ 1,000 € Keep in mind, these numbers might change based on your situation, university and the city you're headed to. The exact figure depends on your contract and the type of visa you are applying for.",
+        "For students, here's a breakdown to help you plan: • Blocked Account: ~ 12,500 € • Processing expenses (including visa fee, university admission fee, insurance): ~ 1,000 € • Travel: ~ 600 € • First-month expenses: ~ 1,500 €(rent, deposit, etc) • Other: ~ 1,000 € Keep in mind, these numbers might change based on your situation, university and the city you're headed to. The exact figure depends on your contract and the type of visa you are applying for.",
     },
     {
       question: "Is German language required?",
