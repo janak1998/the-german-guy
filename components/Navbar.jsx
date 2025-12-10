@@ -91,10 +91,10 @@ const Navbar = () => {
                 <ul className="absolute left-[-35px] top-full hidden group-hover:block border border-gray-300 dark:border-gray-600 rounded-md shadow-lg z-10 dark:bg-slate-600 bg-white">
                   <li>
                     <Link
-                      href="/impressum"
+                      href="/services/#"
                       className="block py-2 px-4 cursor-pointer hover:text-blue-500"
                     >
-                      Impressum
+                      About TGG
                     </Link>
                   </li>
                   <li>
@@ -111,6 +111,14 @@ const Navbar = () => {
                       className="block py-2 px-4 cursor-pointer hover:text-blue-500"
                     >
                       Jobs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/impressum"
+                      className="block py-2 px-4 cursor-pointer hover:text-blue-500"
+                    >
+                      Impressum
                     </Link>
                   </li>
                   <li>
