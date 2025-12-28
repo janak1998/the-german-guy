@@ -15,6 +15,11 @@ const FAQs = () => {
         "Getting your visa sorted out can take a few weeks and how long exactly depends on the type of visa you’re applying for and how busy the German embassy or consulate in Kathmandu is. To make sure everything goes smoothly, it’s a good idea to kick off the process well before you plan to start your journey. That way, you’ll have plenty of time to handle everything without any stress. For more info, please follow the embassy website ( https://kathmandu.diplo.de/np-de )",
     },
     {
+      question: "How can we apply for German visa?",
+      answer:
+        "You can apply German visa online through consular service portal(Diplo portal). You can visit the CSP website for more details. For your reference visit our YouTube video, we have covered step-by-step process (https://www.youtube.com/playlist?list=PLvINdAyNEXiz741uhBAlYyvqYvVbU4GgY)",
+    },
+    {
       question: "How much money does it take in total?",
       answer:
         "For students, here's a breakdown to help you plan: • Blocked Account: ~ 12,500 € • Processing expenses (including visa fee, university admission fee, insurance): ~ 1,000 € • Travel: ~ 600 € • First-month expenses: ~ 1,500 €(rent, deposit, etc) • Other: ~ 1,000 € Keep in mind, these numbers might change based on your situation, university and the city you're headed to. The exact figure depends on your contract and the type of visa you are applying for.",
